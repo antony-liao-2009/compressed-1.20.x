@@ -1,6 +1,7 @@
 package net.antony.compressed;
 
 import com.mojang.logging.LogUtils;
+import net.antony.compressed.block.ModBlocks;
 import net.antony.compressed.item.ModCreativeModTabs;
 import net.antony.compressed.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,7 @@ public class Compressed
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

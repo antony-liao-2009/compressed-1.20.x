@@ -1,6 +1,7 @@
 package net.antony.compressed.item;
 
 import net.antony.compressed.Compressed;
+import net.antony.compressed.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,7 @@ public class ModCreativeModTabs {
                                 pOutput.accept(ModItems.COMPRESSED_DIAMOND.get());
                                 pOutput.accept(ModItems.COMPRESSED_IRON.get());
 
+                                pOutput.accept(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get());
                             })
                             .build());
 

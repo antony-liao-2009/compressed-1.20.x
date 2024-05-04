@@ -2,6 +2,8 @@
   "item.compressed.compressed_diamond": "Compressed Diamond",
   "item.compressed.compressed_iron": "Compressed Iron",
 
+  "block.compressed.compressed_diamond_block": "Block of Compressed Diamond",
+
   "creativetab.compressed_tab": "Compressed Tab"
 
 }

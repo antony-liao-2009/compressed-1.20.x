@@ -1,6 +1,7 @@
 package net.antony.compressed;
 
 import com.mojang.logging.LogUtils;
+import net.antony.compressed.item.ModCreativeModTabs;
 import net.antony.compressed.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -27,6 +28,8 @@ public class Compressed
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
         ModItems.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
@@ -46,6 +49,7 @@ public class Compressed
     {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.COMPRESSED_DIAMOND);
+            event.accept(ModItems.COMPRESSED_IRON);
         }
     }
 

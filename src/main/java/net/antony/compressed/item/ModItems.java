@@ -14,6 +14,9 @@ public class ModItems {
     public static final RegistryObject<Item> COMPRESSED_DIAMOND =
             ITEMS.register("compressed_diamond",
                     () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_IRON =
+            ITEMS.register("compressed_iron",
+                    () -> new Item(new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

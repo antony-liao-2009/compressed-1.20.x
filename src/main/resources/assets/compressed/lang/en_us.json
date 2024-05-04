@@ -1,3 +1,7 @@
 {
-  "item.compressed.compressed_diamond": "Compressed Diamond"
+  "item.compressed.compressed_diamond": "Compressed Diamond",
+  "item.compressed.compressed_iron": "Compressed Iron",
+
+  "creativetab.compressed_tab": "Compressed Tab"
+
 }

@@ -17,9 +17,9 @@ import org.slf4j.Logger;
 @Mod(Compressed.MODID)
 public class Compressed
 {
-    // Define mod id in a common place for everything to reference
+
     public static final String MODID = "compressed";
-    // Directly reference a slf4j logger
+
     private static final Logger LOGGER = LogUtils.getLogger();
     public Compressed()
     {
@@ -37,7 +37,7 @@ public class Compressed
 
     }
 
-    // Add the example block item to the building blocks tab
+
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
 
@@ -47,7 +47,7 @@ public class Compressed
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event)
     {
-        // Do something when the server starts
+
         LOGGER.info("HELLO from server starting");
     }
 

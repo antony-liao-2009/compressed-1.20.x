@@ -1,6 +1,8 @@
 package net.antony.compressed;
 
 import com.mojang.logging.LogUtils;
+import net.antony.compressed.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -25,6 +27,8 @@ public class Compressed
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -40,7 +44,9 @@ public class Compressed
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.COMPRESSED_DIAMOND);
+        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

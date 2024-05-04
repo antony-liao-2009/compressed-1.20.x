@@ -24,6 +24,9 @@ public class ModCreativeModTabs {
                                 pOutput.accept(ModItems.COMPRESSED_IRON.get());
 
                                 pOutput.accept(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get());
+                                pOutput.accept(ModBlocks.COMPRESSED_IRON_BLOCK.get());
+
+
                             })
                             .build());
 

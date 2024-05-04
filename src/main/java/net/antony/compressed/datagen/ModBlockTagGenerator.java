@@ -1,4 +1,4 @@
 package net.antony.compressed.datagen;
 
-public class ModBlocksStateProvider {
+public class ModBlockTagGenerator {
 }

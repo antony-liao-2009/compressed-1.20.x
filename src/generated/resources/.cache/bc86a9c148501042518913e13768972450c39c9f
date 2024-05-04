@@ -1,0 +1,7 @@
+// 1.20.1	2024-05-04T23:36:00.416317	Block States: compressed
+c90b56a289493c2d15dd6c450db3128f784a10a6 assets/compressed/blockstates/compressed_diamond_block.json
+1b73841eb77a094935ec0cb789c7eb9e0e82d812 assets/compressed/blockstates/compressed_iron_block.json
+4856f3453fb8dbd6c1c150cf2335b43a37765f04 assets/compressed/models/block/compressed_diamond_block.json
+798cb8a75e5a7e159a1fa0173f57bc2f433934ff assets/compressed/models/block/compressed_iron_block.json
+0283903d7cf2e9364d708ada335fa15e052e77be assets/compressed/models/item/compressed_diamond_block.json
+6105f604da25c45939f236fa0b1b37d77e13017d assets/compressed/models/item/compressed_iron_block.json

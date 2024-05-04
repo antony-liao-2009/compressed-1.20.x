@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "compressed:compressed_diamond_block"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_diamond"
+  }
+}

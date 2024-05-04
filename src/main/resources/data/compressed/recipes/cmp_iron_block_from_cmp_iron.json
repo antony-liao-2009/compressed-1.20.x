@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "compressed:compressed_iron"
+    }
+  },
+  "result": {
+    "item": "compressed:compressed_iron_block"
+  }
+}

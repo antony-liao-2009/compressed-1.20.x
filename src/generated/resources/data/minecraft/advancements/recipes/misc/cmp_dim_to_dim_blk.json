@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "compressed:compressed_diamond_block"
+        "recipe": "minecraft:cmp_dim_to_dim_blk"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "compressed:compressed_diamond_block"
+      "minecraft:cmp_dim_to_dim_blk"
     ]
   },
   "sends_telemetry_event": false

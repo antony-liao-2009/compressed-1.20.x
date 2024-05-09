@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_compressed_iron_block": {
+    "has_iron_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "compressed:compressed_iron_block"
+              "minecraft:iron_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "compressed:compressed_iron"
+        "recipe": "minecraft:ir_blk_to_cmp_ir"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_compressed_iron_block",
+      "has_iron_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "compressed:compressed_iron"
+      "minecraft:ir_blk_to_cmp_ir"
     ]
   },
   "sends_telemetry_event": false

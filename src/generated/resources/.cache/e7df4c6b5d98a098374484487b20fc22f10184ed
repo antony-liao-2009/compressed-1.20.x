@@ -1,3 +1,8 @@
-// 1.20.1	2024-05-04T23:36:00.413734	Item Models: compressed
+// 1.20.1	2024-05-09T21:20:30.080071	Item Models: compressed
 f619a785e5a1c6aa26399f501daea3c5c0818eaa assets/compressed/models/item/compressed_diamond.json
+c1c6733ea30ab55ba4bb44bbad1b4b8f7ab4633c assets/compressed/models/item/compressed_diamond_axe.json
+016783df736aed2eac6bb6342b44db323238dced assets/compressed/models/item/compressed_diamond_hoe.json
+2b9739c7d831080cf82848be2db81f6b9104fcbd assets/compressed/models/item/compressed_diamond_pickaxe.json
+dddbcf03264e329a55a77d44268cdb7402a9f220 assets/compressed/models/item/compressed_diamond_shovel.json
+31b1006d0f11c50497d78cf300be157f3b1ddc1e assets/compressed/models/item/compressed_diamond_sword.json
 9fdc152625d703d48beaaf1ba0e3dfe8acaf13c3 assets/compressed/models/item/compressed_iron.json

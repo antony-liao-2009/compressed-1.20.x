@@ -20,8 +20,20 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.COMPRESSED_DIAMOND);
         simpleItem(ModItems.COMPRESSED_IRON);
 
+        handheldItem(ModItems.COMPRESSED_DIAMOND_SWORD);
+        handheldItem(ModItems.COMPRESSED_DIAMOND_AXE);
+        handheldItem(ModItems.COMPRESSED_DIAMOND_PICKAXE);
+        handheldItem(ModItems.COMPRESSED_DIAMOND_SHOVEL);
+        handheldItem(ModItems.COMPRESSED_DIAMOND_HOE);
+
+
     }
 
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item){
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(Compressed.MODID,"item/" + item.getId().getPath()));
+    }
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",

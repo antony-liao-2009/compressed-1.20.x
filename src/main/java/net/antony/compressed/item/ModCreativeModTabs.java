@@ -26,6 +26,12 @@ public class ModCreativeModTabs {
                                 pOutput.accept(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get());
                                 pOutput.accept(ModBlocks.COMPRESSED_IRON_BLOCK.get());
 
+                                pOutput.accept(ModItems.COMPRESSED_DIAMOND_SWORD.get());
+                                pOutput.accept(ModItems.COMPRESSED_DIAMOND_PICKAXE.get());
+                                pOutput.accept(ModItems.COMPRESSED_DIAMOND_AXE.get());
+                                pOutput.accept(ModItems.COMPRESSED_DIAMOND_SHOVEL.get());
+                                pOutput.accept(ModItems.COMPRESSED_DIAMOND_HOE.get());
+
 
                             })
                             .build());

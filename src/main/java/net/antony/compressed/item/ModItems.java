@@ -21,6 +21,7 @@ public class ModItems {
     /*
     remember to add textures!!!!!!!
      */
+    //diamond
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_SWORD = ITEMS.register("compressed_diamond_sword",
             ()->new SwordItem(ModToolTiers.CMP_DIM,60,
                     -2.4F,new Item.Properties()));
@@ -37,6 +38,22 @@ public class ModItems {
             ()->new HoeItem(ModToolTiers.CMP_DIM,0,
                     0,new Item.Properties()));
 
+    //iron
+    public static final RegistryObject<Item> COMPRESSED_IRON_SWORD = ITEMS.register("compressed_iron_sword",
+            ()->new SwordItem(ModToolTiers.CMP_DIM,14,
+                    -2.4F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_IRON_PICKAXE = ITEMS.register("compressed_iron_pickaxe",
+            ()->new PickaxeItem(ModToolTiers.CMP_DIM,3, -2.8F,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_IRON_AXE = ITEMS.register("compressed_iron_axe",
+            ()->new AxeItem(ModToolTiers.CMP_DIM,10,
+                    -3.1F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_IRON_SHOVEL = ITEMS.register("compressed_iron_shovel",
+            ()->new ShovelItem(ModToolTiers.CMP_DIM,-1,
+                    -2.8F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_IRON_HOE = ITEMS.register("compressed_iron_hoe",
+            ()->new HoeItem(ModToolTiers.CMP_DIM,-1,
+                    0,new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

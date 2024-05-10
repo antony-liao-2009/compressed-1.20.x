@@ -26,6 +26,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.COMPRESSED_DIAMOND_SHOVEL);
         handheldItem(ModItems.COMPRESSED_DIAMOND_HOE);
 
+        handheldItem(ModItems.COMPRESSED_IRON_SWORD);
+        handheldItem(ModItems.COMPRESSED_IRON_AXE);
+        handheldItem(ModItems.COMPRESSED_IRON_PICKAXE);
+        handheldItem(ModItems.COMPRESSED_IRON_SHOVEL);
+        handheldItem(ModItems.COMPRESSED_IRON_HOE);
+
 
     }
 

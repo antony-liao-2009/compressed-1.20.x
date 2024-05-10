@@ -11,6 +11,13 @@
   "item.compressed.compressed_diamond_shovel": "Compressed Diamond Shovel",
   "item.compressed.compressed_diamond_hoe": "Compressed Diamond Hoe",
 
+    "item.compressed.compressed_iron_sword": "Compressed Iron Sword",
+  "item.compressed.compressed_iron_pickaxe": "Compressed Iron Pickaxe",
+  "item.compressed.compressed_iron_axe": "Compressed Iron Axe",
+  "item.compressed.compressed_iron_shovel": "Compressed Iron Shovel",
+  "item.compressed.compressed_iron_hoe": "Compressed Iron Hoe",
+
+
 
   "creativetab.compressed_tab": "Compressed Tab"
 

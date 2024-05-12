@@ -17,6 +17,17 @@
   "item.compressed.compressed_iron_shovel": "Compressed Iron Shovel",
   "item.compressed.compressed_iron_hoe": "Compressed Iron Hoe",
 
+  "item.compressed.compressed_diamond_helmet": "Compressed Diamond Helmet",
+  "item.compressed.compressed_diamond_chestplate": "Compressed Diamond Chestplate",
+  "item.compressed.compressed_diamond_leggings": "Compressed Diamond Leggings",
+  "item.compressed.compressed_diamond_boots": "Compressed Diamond Boots",
+
+    "item.compressed.compressed_iron_helmet": "Compressed Iron Helmet",
+  "item.compressed.compressed_iron_chestplate": "Compressed Iron Chestplate",
+  "item.compressed.compressed_iron_leggings": "Compressed Iron Leggings",
+  "item.compressed.compressed_iron_boots": "Compressed Iron Boots",
+
+
 
 
   "creativetab.compressed_tab": "Compressed Tab"

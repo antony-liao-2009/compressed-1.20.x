@@ -1,7 +1,9 @@
 package net.antony.compressed.item;
 
 import net.antony.compressed.Compressed;
+import net.antony.compressed.item.custom.SoulDrinkerItem;
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -21,6 +23,42 @@ public class ModItems {
     /*
     remember to add textures!!!!!!!
      */
+
+    //soul breaker
+    public static final RegistryObject<Item> SOUL_DRINKER =
+            ITEMS.register("soul_drinker",()->new SoulDrinkerItem(new Tier() {
+                @Override
+                public int getUses() {
+                    return 0;
+                }
+
+                @Override
+                public float getSpeed() {
+                    return 0;
+                }
+
+                @Override
+                public float getAttackDamageBonus() {
+                    return 0;
+                }
+
+                @Override
+                public int getLevel() {
+                    return 0;
+                }
+
+                @Override
+                public int getEnchantmentValue() {
+                    return 30;
+                }
+
+                @Override
+                public Ingredient getRepairIngredient() {
+                    return null;
+                }
+            }));
+
+
     //diamond tools
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_SWORD = ITEMS.register("compressed_diamond_sword",
             ()->new SwordItem(ModToolTiers.CMP_DIM,60,

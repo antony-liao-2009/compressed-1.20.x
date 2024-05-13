@@ -42,6 +42,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        handheldItem(ModItems.SOUL_DRINKER);
+
         simpleItem(ModItems.COMPRESSED_DIAMOND);
         simpleItem(ModItems.COMPRESSED_IRON);
 

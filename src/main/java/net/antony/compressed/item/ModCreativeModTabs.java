@@ -20,6 +20,9 @@ public class ModCreativeModTabs {
                     CreativeModeTab.builder().icon(() -> new ItemStack((ModItems.COMPRESSED_DIAMOND.get())))
                             .title(Component.translatable("creativetab.compressed_tab"))
                             .displayItems((pParameters, pOutput) -> {
+
+                                pOutput.accept(ModItems.SOUL_DRINKER.get());
+
                                 pOutput.accept(ModItems.COMPRESSED_DIAMOND.get());
                                 pOutput.accept(ModItems.COMPRESSED_IRON.get());
 

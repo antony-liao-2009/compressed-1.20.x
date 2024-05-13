@@ -1,6 +1,7 @@
 package net.antony.compressed.item;
 
 import net.antony.compressed.Compressed;
+import net.antony.compressed.item.custom.ModArmorItem;
 import net.antony.compressed.item.custom.SoulDrinkerItem;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -79,7 +80,7 @@ public class ModItems {
 
     //diamond armor
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_HELMET = ITEMS.register("compressed_diamond_helmet",
-            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_DIAMOND,ArmorItem.Type.HELMET,new Item.Properties()));
+            ()->new ModArmorItem(ModArmorMaterials.COMPRESSED_DIAMOND,ArmorItem.Type.HELMET,new Item.Properties()));
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_CHESTPLATE = ITEMS.register("compressed_diamond_chestplate",
             ()->new ArmorItem(ModArmorMaterials.COMPRESSED_DIAMOND,ArmorItem.Type.CHESTPLATE,new Item.Properties()));
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_LEGGINGS = ITEMS.register("compressed_diamond_leggings",
@@ -113,7 +114,7 @@ public class ModItems {
 
     //iron armor
     public static final RegistryObject<Item> COMPRESSED_IRON_HELMET = ITEMS.register("compressed_iron_helmet",
-            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_IRON,ArmorItem.Type.HELMET,new Item.Properties()));
+            ()->new ModArmorItem(ModArmorMaterials.COMPRESSED_IRON,ArmorItem.Type.HELMET,new Item.Properties()));
     public static final RegistryObject<Item> COMPRESSED_IRON_CHESTPLATE = ITEMS.register("compressed_iron_chestplate",
             ()->new ArmorItem(ModArmorMaterials.COMPRESSED_IRON,ArmorItem.Type.CHESTPLATE,new Item.Properties()));
     public static final RegistryObject<Item> COMPRESSED_IRON_LEGGINGS = ITEMS.register("compressed_iron_leggings",

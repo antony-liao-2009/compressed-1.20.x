@@ -5,6 +5,8 @@ import net.antony.compressed.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -62,6 +64,84 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter,"cmp_dim_to_dim_blk");
 
 
+
+
+        //diamond tools
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_SWORD.get())
+                .requires(Items.DIAMOND_SWORD)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_SWORD),
+                        has(Items.DIAMOND_SWORD))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_PICKAXE.get())
+                .requires(Items.DIAMOND_PICKAXE)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_PICKAXE),
+                        has(Items.DIAMOND_PICKAXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_AXE.get())
+                .requires(Items.DIAMOND_AXE)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_AXE),
+                        has(Items.DIAMOND_AXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_SHOVEL.get())
+                .requires(Items.DIAMOND_SHOVEL)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_SHOVEL),
+                        has(Items.DIAMOND_SHOVEL))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_HOE.get())
+                .requires(Items.DIAMOND_HOE)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_HOE),
+                        has(Items.DIAMOND_HOE))
+                .save(pWriter);
+
+
+
+
+        //diamond armor
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_HELMET.get())
+                .requires(Items.DIAMOND_HELMET)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_HELMET),
+                        has(Items.DIAMOND_HELMET))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_CHESTPLATE.get())
+                .requires(Items.DIAMOND_CHESTPLATE)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_CHESTPLATE),
+                        has(Items.DIAMOND_CHESTPLATE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_LEGGINGS.get())
+                .requires(Items.DIAMOND_LEGGINGS)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_LEGGINGS),
+                        has(Items.DIAMOND_LEGGINGS))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_DIAMOND_BOOTS.get())
+                .requires(Items.DIAMOND_BOOTS)
+                .requires(ModItems.COMPRESSED_DIAMOND.get())
+                .unlockedBy(getHasName(Items.DIAMOND_BOOTS),
+                        has(Items.DIAMOND_BOOTS))
+                .save(pWriter);
+
+
+
+
+
+
+
+
+
         //iron
         /*
         below is cmp_ir_to_cmp_ir_blk,
@@ -106,5 +186,73 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter,"cmp_ir_to_ir_blk");
 
 
+
+
+        //iron tools
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_SWORD.get())
+                .requires(Items.IRON_SWORD)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_SWORD),
+                        has(Items.IRON_SWORD))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_PICKAXE.get())
+                .requires(Items.IRON_PICKAXE)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_PICKAXE),
+                        has(Items.IRON_PICKAXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_AXE.get())
+                .requires(Items.IRON_AXE)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_AXE),
+                        has(Items.IRON_AXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_SHOVEL.get())
+                .requires(Items.IRON_SHOVEL)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_SHOVEL),
+                        has(Items.IRON_SHOVEL))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_HOE.get())
+                .requires(Items.IRON_HOE)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_HOE),
+                        has(Items.IRON_HOE))
+                .save(pWriter);
+
+
+
+        //iron armor
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_HELMET.get())
+                .requires(Items.IRON_HELMET)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_HELMET),
+                        has(Items.IRON_HELMET))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_CHESTPLATE.get())
+                .requires(Items.IRON_CHESTPLATE)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_CHESTPLATE),
+                        has(Items.IRON_CHESTPLATE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_LEGGINGS.get())
+                .requires(Items.IRON_LEGGINGS)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_LEGGINGS),
+                        has(Items.IRON_LEGGINGS))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_IRON_BOOTS.get())
+                .requires(Items.IRON_BOOTS)
+                .requires(ModItems.COMPRESSED_IRON.get())
+                .unlockedBy(getHasName(Items.IRON_BOOTS),
+                        has(Items.IRON_BOOTS))
+                .save(pWriter);
     }
 }

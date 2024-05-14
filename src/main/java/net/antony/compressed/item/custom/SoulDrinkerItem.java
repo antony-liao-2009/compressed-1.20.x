@@ -20,6 +20,14 @@ public class SoulDrinkerItem extends SwordItem {
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
         if (entity instanceof LivingEntity){
             LivingEntity victim = (LivingEntity) entity;
+            if (victim instanceof Player){
+                if(victim.isInvulnerable()){
+                    victim.setHealth(0);
+                }
+                else{
+                    victim.kill();
+                }
+            }
             if(!victim.isDeadOrDying() && victim.getHealth()>0 ){
                 try {
                     victim.kill();
@@ -29,7 +37,12 @@ public class SoulDrinkerItem extends SwordItem {
                 }
                 return true;
             }
+            if(victim.isInvulnerable()){
+                victim.setHealth(0);
+            }
+            return true;
         }
+
         return false;
     }
 

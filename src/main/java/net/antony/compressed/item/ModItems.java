@@ -30,7 +30,7 @@ public class ModItems {
             ITEMS.register("soul_drinker",()->new SoulDrinkerItem(new Tier() {
                 @Override
                 public int getUses() {
-                    return 0;
+                    return 9999;
                 }
 
                 @Override

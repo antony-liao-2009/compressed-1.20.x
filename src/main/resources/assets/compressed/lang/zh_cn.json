@@ -1,0 +1,36 @@
+{
+  "item.compressed.compressed_diamond": "压缩钻石",
+  "item.compressed.compressed_iron": "压缩铁锭",
+
+  "block.compressed.compressed_diamond_block": "压缩钻石块",
+  "block.compressed.compressed_iron_block": "压缩铁块",
+
+  "item.compressed.soul_drinker": "§d§l§k灵魂 §d§l§o吞噬者",
+
+  "item.compressed.compressed_diamond_sword": "压缩钻石剑",
+  "item.compressed.compressed_diamond_pickaxe": "压缩钻石镐",
+  "item.compressed.compressed_diamond_axe": "压缩钻石斧",
+  "item.compressed.compressed_diamond_shovel": "压缩钻石铲",
+  "item.compressed.compressed_diamond_hoe": "压缩钻石锄",
+
+  "item.compressed.compressed_iron_sword": "压缩铁剑",
+  "item.compressed.compressed_iron_pickaxe": "压缩铁镐",
+  "item.compressed.compressed_iron_axe": "压缩铁斧",
+  "item.compressed.compressed_iron_shovel": "压缩铁铲",
+  "item.compressed.compressed_iron_hoe": "压缩铁锄",
+
+  "item.compressed.compressed_diamond_helmet": "压缩钻石头盔",
+  "item.compressed.compressed_diamond_chestplate": "压缩钻石胸甲",
+  "item.compressed.compressed_diamond_leggings": "压缩钻石护腿",
+  "item.compressed.compressed_diamond_boots": "压缩钻石靴子",
+
+  "item.compressed.compressed_iron_helmet": "压缩铁头盔",
+  "item.compressed.compressed_iron_chestplate": "压缩铁胸甲",
+  "item.compressed.compressed_iron_leggings": "压缩铁护腿",
+  "item.compressed.compressed_iron_boots": "压缩铁靴子",
+
+
+
+
+  "creativetab.compressed_tab": "压缩Tab"
+}

@@ -48,6 +48,7 @@ public class SoulDrinkerItem extends SwordItem {
 
 
 
+
     @Override
     public void setDamage(ItemStack stack, int damage) {
         super.setDamage(stack, 0);

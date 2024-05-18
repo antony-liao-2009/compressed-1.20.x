@@ -34,6 +34,10 @@ public class ModBlocks {
             "compressed_iron_block", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)
                     .sound(SoundType.ANCIENT_DEBRIS)));
 
+        public static final RegistryObject<Block> COMPRESSED_GOLD_BLOCK = registerBlock(
+            "compressed_gold_block", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)
+                    .sound(SoundType.ANCIENT_DEBRIS)));
+
 
     private static <T extends Block> RegistryObject<Item> registerBlockItem
             (String name, RegistryObject<T> block) {

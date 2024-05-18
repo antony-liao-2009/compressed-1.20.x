@@ -46,6 +46,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         simpleItem(ModItems.COMPRESSED_DIAMOND);
         simpleItem(ModItems.COMPRESSED_IRON);
+        simpleItem(ModItems.COMPRESSED_GOLD);
 
         //diamond
         handheldItem(ModItems.COMPRESSED_DIAMOND_SWORD);

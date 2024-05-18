@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-12T18:57:07.687505	Item Models: compressed
+// 1.20.1	2024-05-18T16:19:38.514958	Item Models: compressed
 f619a785e5a1c6aa26399f501daea3c5c0818eaa assets/compressed/models/item/compressed_diamond.json
 c1c6733ea30ab55ba4bb44bbad1b4b8f7ab4633c assets/compressed/models/item/compressed_diamond_axe.json
 92bf7ad423b8f039c4ebc18f64d97abc61d89772 assets/compressed/models/item/compressed_diamond_boots.json
@@ -49,6 +49,7 @@ d0114147d442425a9ff5d232ac37027cbbe0ea6f assets/compressed/models/item/compresse
 2b9739c7d831080cf82848be2db81f6b9104fcbd assets/compressed/models/item/compressed_diamond_pickaxe.json
 dddbcf03264e329a55a77d44268cdb7402a9f220 assets/compressed/models/item/compressed_diamond_shovel.json
 31b1006d0f11c50497d78cf300be157f3b1ddc1e assets/compressed/models/item/compressed_diamond_sword.json
+ee7be9015d4141584ed6c7209171af151423b21b assets/compressed/models/item/compressed_gold.json
 9fdc152625d703d48beaaf1ba0e3dfe8acaf13c3 assets/compressed/models/item/compressed_iron.json
 2dafe456663784a49c8cfcb42dbb353fb851843d assets/compressed/models/item/compressed_iron_axe.json
 3869937825a1492d300e07b4a74fae94b529e4c7 assets/compressed/models/item/compressed_iron_boots.json

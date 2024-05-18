@@ -26,5 +26,13 @@ public class ModToolTiers {
             List.of(Tiers.DIAMOND),
             List.of());
 
+    public static final Tier CMP_GOLD = TierSortingRegistry.registerTier(
+            new ForgeTier(3,40*9,40f,1f,20,
+                    ModTags.Blocks.NEEDS_CMP_GOLD_TOOL,()->Ingredient.of(ModItems.COMPRESSED_GOLD.get())),
+            new ResourceLocation(Compressed.MODID,"compressed_gold"),
+            List.of(Tiers.GOLD),
+            List.of());
+
+
 
 }

@@ -19,7 +19,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     protected void generate() {
         this.dropSelf(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get());
         this.dropSelf(ModBlocks.COMPRESSED_IRON_BLOCK.get());
-
+        this.dropSelf(ModBlocks.COMPRESSED_GOLD_BLOCK.get());
 
     }
 

@@ -1,9 +1,11 @@
 {
   "item.compressed.compressed_diamond": "Compressed Diamond",
   "item.compressed.compressed_iron": "Compressed Iron",
+  "item.compressed.compressed_gold": "Compressed Gold",
 
   "block.compressed.compressed_diamond_block": "Block of Compressed Diamond",
   "block.compressed.compressed_iron_block": "Block of Compressed Iron",
+  "block.compressed.compressed_gold_block": "Block of Compressed Gold",
 
   "item.compressed.soul_drinker": "§d§l§kSOUL §d§l§oDRINKER",
 

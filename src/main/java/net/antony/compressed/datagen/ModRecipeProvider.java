@@ -19,16 +19,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         super(pOutput);
     }
 
-    //diamond
-    /*
-    below is cmp_dim_to_cmp_dim_blk,
-    cmp_dim_blk_to_cmp_dim,
-    dim_blk_to_cmp_dim
-    cmp_dim_to_dim_blk
-    */
+
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+
+
+        //diamond
+        /*
+        below is cmp_dim_to_cmp_dim_blk,
+        cmp_dim_blk_to_cmp_dim,
+        dim_blk_to_cmp_dim
+        cmp_dim_to_dim_blk
+        */
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                 ModBlocks.COMPRESSED_DIAMOND_BLOCK.get())
                 .pattern("SSS")
@@ -254,5 +257,53 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(Items.IRON_BOOTS),
                         has(Items.IRON_BOOTS))
                 .save(pWriter);
+
+
+
+
+
+        //gold
+        /*
+        below is cmp_gl_to_cmp_gl_blk,
+        cmp_gl_blk_to_cmp_gl,
+        gl_blk_to_cmp_gl
+        cmp_gl_to_gl_blk
+         */
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+                        ModBlocks.COMPRESSED_GOLD_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(ModItems.COMPRESSED_GOLD.get()),
+                        has(ModItems.COMPRESSED_GOLD.get()))
+                .save(pWriter,"cmp_gl_to_cmp_gl_blk");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+                        ModItems.COMPRESSED_GOLD.get(),9)
+                .requires(ModBlocks.COMPRESSED_GOLD_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.COMPRESSED_GOLD_BLOCK.get()),
+                        has(ModBlocks.COMPRESSED_GOLD_BLOCK.get()))
+                .save(pWriter,"cmp_gl_blk_to_cmp_gl");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+                        ModItems.COMPRESSED_GOLD.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', Blocks.GOLD_BLOCK)
+                .unlockedBy(getHasName(Blocks.GOLD_BLOCK),
+                        has(Blocks.GOLD_BLOCK))
+                .save(pWriter,"gl_blk_to_cmp_gl");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+                        Blocks.GOLD_BLOCK,9)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(ModItems.COMPRESSED_GOLD.get()),
+                        has(ModItems.COMPRESSED_GOLD.get()))
+                .save(pWriter,"cmp_gl_to_gl_blk");
+
+
     }
 }

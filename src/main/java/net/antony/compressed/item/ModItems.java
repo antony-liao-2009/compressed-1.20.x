@@ -20,6 +20,9 @@ public class ModItems {
     public static final RegistryObject<Item> COMPRESSED_IRON =
             ITEMS.register("compressed_iron",
                     () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD =
+            ITEMS.register("compressed_gold",
+                    () -> new Item(new Item.Properties()));
 
     /*
     remember to add textures!!!!!!!

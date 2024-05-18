@@ -13,6 +13,7 @@ public class ModTags {
 
         public static final TagKey<Block> NEEDS_CMP_DIM_TOOL = tag("needs_cmp_dim_tool");
         public static final TagKey<Block> NEEDS_CMP_IRON_TOOL = tag("needs_cmp_iron_tool");
+        public static final TagKey<Block> NEEDS_CMP_GOLD_TOOL = tag("needs_cmp_gold_tool");
 
         private static TagKey<Block> tag(String name){
             return BlockTags.create(new ResourceLocation(Compressed.MODID,name));

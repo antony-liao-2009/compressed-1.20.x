@@ -23,11 +23,13 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     protected void addTags(HolderLookup.Provider pProvider) {
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get(),
-                        ModBlocks.COMPRESSED_IRON_BLOCK.get());
+                        ModBlocks.COMPRESSED_IRON_BLOCK.get(),
+                        ModBlocks.COMPRESSED_GOLD_BLOCK.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get(),
-                        ModBlocks.COMPRESSED_IRON_BLOCK.get());
+                        ModBlocks.COMPRESSED_IRON_BLOCK.get(),
+                        ModBlocks.COMPRESSED_GOLD_BLOCK.get());
 
 
     }

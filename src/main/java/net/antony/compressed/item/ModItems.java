@@ -149,6 +149,17 @@ public class ModItems {
 
 
 
+    //gold armor
+    public static final RegistryObject<Item> COMPRESSED_GOLD_HELMET = ITEMS.register("compressed_gold_helmet",
+            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_GOLD,ArmorItem.Type.HELMET,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD_CHESTPLATE = ITEMS.register("compressed_gold_chestplate",
+            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_GOLD,ArmorItem.Type.CHESTPLATE,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD_LEGGINGS = ITEMS.register("compressed_gold_leggings",
+            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_GOLD,ArmorItem.Type.LEGGINGS,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD_BOOTS = ITEMS.register("compressed_gold_boots",
+            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_GOLD,ArmorItem.Type.BOOTS,new Item.Properties()));
+
+
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

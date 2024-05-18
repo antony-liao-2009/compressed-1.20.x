@@ -34,10 +34,15 @@
   "item.compressed.compressed_diamond_leggings": "Compressed Diamond Leggings",
   "item.compressed.compressed_diamond_boots": "Compressed Diamond Boots",
 
-    "item.compressed.compressed_iron_helmet": "Compressed Iron Helmet",
+  "item.compressed.compressed_iron_helmet": "Compressed Iron Helmet",
   "item.compressed.compressed_iron_chestplate": "Compressed Iron Chestplate",
   "item.compressed.compressed_iron_leggings": "Compressed Iron Leggings",
   "item.compressed.compressed_iron_boots": "Compressed Iron Boots",
+
+  "item.compressed.compressed_gold_helmet": "Compressed Gold Helmet",
+  "item.compressed.compressed_gold_chestplate": "Compressed Gold Chestplate",
+  "item.compressed.compressed_gold_leggings": "Compressed Gold Leggings",
+  "item.compressed.compressed_gold_boots": "Compressed Gold Boots",
 
 
 

@@ -28,10 +28,11 @@ public class ModCreativeModTabs {
                                 pOutput.accept(ModItems.COMPRESSED_GOLD.get());
 
 
-
                                 pOutput.accept(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get());
                                 pOutput.accept(ModBlocks.COMPRESSED_IRON_BLOCK.get());
                                 pOutput.accept(ModBlocks.COMPRESSED_GOLD_BLOCK.get());
+
+
 
                                 pOutput.accept(ModItems.COMPRESSED_DIAMOND_SWORD.get());
                                 pOutput.accept(ModItems.COMPRESSED_DIAMOND_PICKAXE.get());
@@ -62,11 +63,17 @@ public class ModCreativeModTabs {
 
 
 
+
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_SWORD.get());
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_PICKAXE.get());
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_AXE.get());
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_SHOVEL.get());
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_HOE.get());
+
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_HELMET.get());
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_CHESTPLATE.get());
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_LEGGINGS.get());
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_BOOTS.get());
                             })
                             .build());
 

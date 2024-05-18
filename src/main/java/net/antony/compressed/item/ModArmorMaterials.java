@@ -13,7 +13,9 @@ public enum ModArmorMaterials implements ArmorMaterial {
     COMPRESSED_DIAMOND("compressed_diamond",120,new int[] {6,11,7,5},30,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 4.5f,0.15f,()->Ingredient.of(ModItems.COMPRESSED_DIAMOND.get())),
     COMPRESSED_IRON("compressed_iron",45,new int[] {4,8,6,4},25,
-            SoundEvents.ARMOR_EQUIP_DIAMOND, 2f,0.08f,()->Ingredient.of(ModItems.COMPRESSED_IRON.get()));
+            SoundEvents.ARMOR_EQUIP_DIAMOND, 2f,0.08f,()->Ingredient.of(ModItems.COMPRESSED_IRON.get())),
+    COMPRESSED_GOLD("compressed_gold",20,new int[] {3,8,6,3},20,
+    SoundEvents.ARMOR_EQUIP_DIAMOND, 0.3f,0f,()->Ingredient.of(ModItems.COMPRESSED_GOLD.get()));
 
 
     private final String name;

@@ -305,5 +305,43 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter,"cmp_gl_to_gl_blk");
 
 
+
+        //gold tools
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_SWORD.get())
+                .requires(Items.GOLDEN_SWORD)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_SWORD),
+                        has(Items.GOLDEN_SWORD))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_PICKAXE.get())
+                .requires(Items.GOLDEN_PICKAXE)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_PICKAXE),
+                        has(Items.GOLDEN_PICKAXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_AXE.get())
+                .requires(Items.GOLDEN_AXE)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_AXE),
+                        has(Items.GOLDEN_AXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_SHOVEL.get())
+                .requires(Items.GOLDEN_SHOVEL)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_SHOVEL),
+                        has(Items.GOLDEN_SHOVEL))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_HOE.get())
+                .requires(Items.GOLDEN_HOE)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_HOE),
+                        has(Items.GOLDEN_HOE))
+                .save(pWriter);
+
+
     }
 }

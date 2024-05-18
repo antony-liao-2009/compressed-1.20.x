@@ -21,6 +21,14 @@
   "item.compressed.compressed_iron_shovel": "压缩铁铲",
   "item.compressed.compressed_iron_hoe": "压缩铁锄",
 
+  "item.compressed.compressed_gold_sword": "压缩金剑",
+  "item.compressed.compressed_gold_pickaxe": "压缩金镐",
+  "item.compressed.compressed_gold_axe": "压缩金斧",
+  "item.compressed.compressed_gold_shovel": "压缩金铲",
+  "item.compressed.compressed_gold_hoe": "压缩金锄",
+
+
+
   "item.compressed.compressed_diamond_helmet": "压缩钻石头盔",
   "item.compressed.compressed_diamond_chestplate": "压缩钻石胸甲",
   "item.compressed.compressed_diamond_leggings": "压缩钻石护腿",

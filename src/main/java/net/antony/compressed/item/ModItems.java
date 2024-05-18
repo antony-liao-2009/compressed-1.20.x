@@ -126,6 +126,30 @@ public class ModItems {
             ()->new ArmorItem(ModArmorMaterials.COMPRESSED_IRON,ArmorItem.Type.BOOTS,new Item.Properties()));
 
 
+
+
+
+
+    //gold tools
+    public static final RegistryObject<Item> COMPRESSED_GOLD_SWORD = ITEMS.register("compressed_gold_sword",
+            ()->new SwordItem(ModToolTiers.CMP_GOLD,9,
+                    -2.4F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD_PICKAXE = ITEMS.register("compressed_gold_pickaxe",
+            ()->new PickaxeItem(ModToolTiers.CMP_IRON,2, -2.8F,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD_AXE = ITEMS.register("compressed_gold_axe",
+            ()->new AxeItem(ModToolTiers.CMP_IRON,8,
+                    -3.1F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD_SHOVEL = ITEMS.register("compressed_gold_shovel",
+            ()->new ShovelItem(ModToolTiers.CMP_IRON,0,
+                    -2.8F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_GOLD_HOE = ITEMS.register("compressed_gold_hoe",
+            ()->new HoeItem(ModToolTiers.CMP_IRON,0,
+                    0,new Item.Properties()));
+
+
+
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

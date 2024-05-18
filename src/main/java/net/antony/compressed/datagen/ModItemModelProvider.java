@@ -73,6 +73,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.COMPRESSED_IRON_LEGGINGS);
         trimmedArmorItem(ModItems.COMPRESSED_IRON_BOOTS);
 
+
+        //gold
+        handheldItem(ModItems.COMPRESSED_GOLD_SWORD);
+        handheldItem(ModItems.COMPRESSED_GOLD_AXE);
+        handheldItem(ModItems.COMPRESSED_GOLD_PICKAXE);
+        handheldItem(ModItems.COMPRESSED_GOLD_SHOVEL);
+        handheldItem(ModItems.COMPRESSED_GOLD_HOE);
+
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item){

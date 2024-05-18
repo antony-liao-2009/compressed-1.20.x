@@ -61,6 +61,12 @@ public class ModCreativeModTabs {
 
 
 
+
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_SWORD.get());
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_PICKAXE.get());
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_AXE.get());
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_SHOVEL.get());
+                                pOutput.accept(ModItems.COMPRESSED_GOLD_HOE.get());
                             })
                             .build());
 

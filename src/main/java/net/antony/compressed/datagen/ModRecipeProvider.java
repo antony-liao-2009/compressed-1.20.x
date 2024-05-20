@@ -449,5 +449,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.SOUL_DRINKER.get())
+                .requires(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
+                .requires(ModItems.COMPRESSED_NETHERITE_SWORD.get())
+                .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
+                        has(ModItems.COMPRESSED_NETHERITE.get()))
+                .save(pWriter);
     }
 }

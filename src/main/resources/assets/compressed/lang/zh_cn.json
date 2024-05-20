@@ -29,6 +29,12 @@
   "item.compressed.compressed_gold_shovel": "压缩金铲",
   "item.compressed.compressed_gold_hoe": "压缩金锄",
 
+  "item.compressed.compressed_netherite_sword": "压缩下界合金剑",
+  "item.compressed.compressed_netherite_pickaxe": "压缩下界合金镐",
+  "item.compressed.compressed_netherite_axe": "压缩下界合金斧",
+  "item.compressed.compressed_netherite_shovel": "压缩下界合金铲",
+  "item.compressed.compressed_netherite_hoe": "压缩下界合金锄",
+
 
 
   "item.compressed.compressed_diamond_helmet": "压缩钻石头盔",

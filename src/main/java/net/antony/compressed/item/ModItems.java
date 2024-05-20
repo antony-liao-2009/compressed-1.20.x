@@ -58,7 +58,7 @@ public class ModItems {
 
                 @Override
                 public int getEnchantmentValue() {
-                    return 30;
+                    return 40;
                 }
 
                 @Override
@@ -164,6 +164,26 @@ public class ModItems {
     public static final RegistryObject<Item> COMPRESSED_GOLD_BOOTS = ITEMS.register("compressed_gold_boots",
             ()->new ArmorItem(ModArmorMaterials.COMPRESSED_GOLD,ArmorItem.Type.BOOTS,new Item.Properties()));
 
+
+
+
+
+    //netherite tools
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_SWORD = ITEMS.register("compressed_netherite_sword",
+            ()->new SwordItem(ModToolTiers.CMP_NTHR,252,
+                    -2.4F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_PICKAXE = ITEMS.register("compressed_netherite_pickaxe",
+            ()->new PickaxeItem(ModToolTiers.CMP_NTHR,8, -2.8F,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_AXE = ITEMS.register("compressed_netherite_axe",
+            ()->new AxeItem(ModToolTiers.CMP_NTHR,20,
+                    -3.0F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_SHOVEL = ITEMS.register("compressed_netherite_shovel",
+            ()->new ShovelItem(ModToolTiers.CMP_NTHR,1,
+                    -2.0F,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_HOE = ITEMS.register("compressed_netherite_hoe",
+            ()->new HoeItem(ModToolTiers.CMP_NTHR,1,
+                    2F,new Item.Properties()));
 
 
     public static void register(IEventBus eventBus){

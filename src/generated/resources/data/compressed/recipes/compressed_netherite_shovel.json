@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_shovel"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_netherite_shovel"
+  }
+}

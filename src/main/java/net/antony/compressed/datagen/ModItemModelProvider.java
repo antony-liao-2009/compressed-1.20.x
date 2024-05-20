@@ -87,6 +87,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.COMPRESSED_GOLD_LEGGINGS);
         trimmedArmorItem(ModItems.COMPRESSED_GOLD_BOOTS);
 
+
+        //netherite
+        handheldItem(ModItems.COMPRESSED_NETHERITE_SWORD);
+        handheldItem(ModItems.COMPRESSED_NETHERITE_AXE);
+        handheldItem(ModItems.COMPRESSED_NETHERITE_PICKAXE);
+        handheldItem(ModItems.COMPRESSED_NETHERITE_SHOVEL);
+        handheldItem(ModItems.COMPRESSED_NETHERITE_HOE);
+
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item){

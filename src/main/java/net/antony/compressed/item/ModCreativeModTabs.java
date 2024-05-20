@@ -76,6 +76,17 @@ public class ModCreativeModTabs {
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_CHESTPLATE.get());
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_LEGGINGS.get());
                                 pOutput.accept(ModItems.COMPRESSED_GOLD_BOOTS.get());
+
+
+
+
+
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_SWORD.get());
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_PICKAXE.get());
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_AXE.get());
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_SHOVEL.get());
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_HOE.get());
+
                             })
                             .build());
 

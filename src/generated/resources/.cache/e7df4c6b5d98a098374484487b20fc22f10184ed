@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-20T21:24:15.487798	Item Models: compressed
+// 1.20.1	2024-05-20T21:49:21.289374	Item Models: compressed
 f619a785e5a1c6aa26399f501daea3c5c0818eaa assets/compressed/models/item/compressed_diamond.json
 c1c6733ea30ab55ba4bb44bbad1b4b8f7ab4633c assets/compressed/models/item/compressed_diamond_axe.json
 92bf7ad423b8f039c4ebc18f64d97abc61d89772 assets/compressed/models/item/compressed_diamond_boots.json
@@ -150,4 +150,9 @@ afbf28bc00486f4abdf6960264b3e7b18475e707 assets/compressed/models/item/compresse
 ac3af59625e1cc0e4965aaa069e2ecb99640f5f3 assets/compressed/models/item/compressed_iron_shovel.json
 729d237d2ad26ae9d34643a4bc4fe9be9eb161db assets/compressed/models/item/compressed_iron_sword.json
 6900949f76da1ccdebde54926abfef1a09fa257d assets/compressed/models/item/compressed_netherite.json
+981fe5d205b5747ef3122b8bb13585e3ecbfe5ef assets/compressed/models/item/compressed_netherite_axe.json
+d390caf19ce8147925d453cfd013d9843939c65f assets/compressed/models/item/compressed_netherite_hoe.json
+7d468ade8d5e5263018df23e2b86daa1ad0c2f02 assets/compressed/models/item/compressed_netherite_pickaxe.json
+c5da026786f1d4bf4b71b69f82ee7e09445d2a2e assets/compressed/models/item/compressed_netherite_shovel.json
+c52be7004e3d0254771a746b7d70bcdcebdaacab assets/compressed/models/item/compressed_netherite_sword.json
 addd87718766773d3bcd4c4fde50ef4749170059 assets/compressed/models/item/soul_drinker.json

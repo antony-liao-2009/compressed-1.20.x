@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "compressed:item/compressed_netherite_sword"
+  }
+}

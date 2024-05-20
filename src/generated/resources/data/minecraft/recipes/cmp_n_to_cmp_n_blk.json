@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "H": {
+      "item": "minecraft:nether_star"
+    },
+    "K": {
+      "item": "minecraft:dragon_egg"
+    },
+    "S": {
+      "item": "compressed:compressed_netherite"
+    }
+  },
+  "pattern": [
+    "HSH",
+    "SKS",
+    "HSH"
+  ],
+  "result": {
+    "item": "compressed:compressed_netherite_block"
+  },
+  "show_notification": true
+}

@@ -344,6 +344,34 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+        //gold armor
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_HELMET.get())
+                .requires(Items.GOLDEN_HELMET)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_HELMET),
+                        has(Items.GOLDEN_HELMET))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_CHESTPLATE.get())
+                .requires(Items.GOLDEN_CHESTPLATE)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_CHESTPLATE),
+                        has(Items.GOLDEN_CHESTPLATE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_LEGGINGS.get())
+                .requires(Items.GOLDEN_LEGGINGS)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_LEGGINGS),
+                        has(Items.GOLDEN_LEGGINGS))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_GOLD_BOOTS.get())
+                .requires(Items.GOLDEN_BOOTS)
+                .requires(ModItems.COMPRESSED_GOLD.get())
+                .unlockedBy(getHasName(Items.GOLDEN_BOOTS),
+                        has(Items.GOLDEN_BOOTS))
+                .save(pWriter);
 
 
 
@@ -378,5 +406,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
                         has(ModItems.COMPRESSED_NETHERITE.get()))
                 .save(pWriter,"cmp_n_to");
+
+
+
+        //netherite tools
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_SWORD.get())
+                .requires(Items.NETHERITE_SWORD)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_SWORD),
+                        has(Items.NETHERITE_SWORD))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_PICKAXE.get())
+                .requires(Items.NETHERITE_PICKAXE)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_PICKAXE),
+                        has(Items.NETHERITE_PICKAXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_AXE.get())
+                .requires(Items.NETHERITE_AXE)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_AXE),
+                        has(Items.NETHERITE_AXE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_SHOVEL.get())
+                .requires(Items.NETHERITE_SHOVEL)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_SHOVEL),
+                        has(Items.NETHERITE_SHOVEL))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_HOE.get())
+                .requires(Items.NETHERITE_HOE)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_HOE),
+                        has(Items.NETHERITE_HOE))
+                .save(pWriter);
+
+
+
+
+
     }
 }

@@ -17,7 +17,7 @@
   "item.compressed.compressed_diamond_shovel": "Compressed Diamond Shovel",
   "item.compressed.compressed_diamond_hoe": "Compressed Diamond Hoe",
 
-    "item.compressed.compressed_iron_sword": "Compressed Iron Sword",
+  "item.compressed.compressed_iron_sword": "Compressed Iron Sword",
   "item.compressed.compressed_iron_pickaxe": "Compressed Iron Pickaxe",
   "item.compressed.compressed_iron_axe": "Compressed Iron Axe",
   "item.compressed.compressed_iron_shovel": "Compressed Iron Shovel",
@@ -29,6 +29,11 @@
   "item.compressed.compressed_gold_shovel": "Compressed Gold Shovel",
   "item.compressed.compressed_gold_hoe": "Compressed Gold Hoe",
 
+  "item.compressed.compressed_netherite_sword": "Compressed Netherite Sword",
+  "item.compressed.compressed_netherite_pickaxe": "Compressed Netherite Pickaxe",
+  "item.compressed.compressed_netherite_axe": "Compressed Netherite Axe",
+  "item.compressed.compressed_netherite_shovel": "Compressed Netherite Shovel",
+  "item.compressed.compressed_netherite_hoe": "Compressed Netherite Hoe",
 
 
   "item.compressed.compressed_diamond_helmet": "Compressed Diamond Helmet",
@@ -45,6 +50,9 @@
   "item.compressed.compressed_gold_chestplate": "Compressed Gold Chestplate",
   "item.compressed.compressed_gold_leggings": "Compressed Gold Leggings",
   "item.compressed.compressed_gold_boots": "Compressed Gold Boots",
+
+
+
 
 
 

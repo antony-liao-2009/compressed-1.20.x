@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-18T16:35:11.001225	Recipes
+// 1.20.1	2024-05-20T21:35:07.418373	Recipes
 566a89d4dee54e5c0178d00b74469cc4f67a44da data/compressed/advancements/recipes/misc/compressed_diamond_axe.json
 32cc852e5a609333414ea43be6e14992924bdfe8 data/compressed/advancements/recipes/misc/compressed_diamond_boots.json
 40db964ace64807664f97f0ba1173e45068ecf74 data/compressed/advancements/recipes/misc/compressed_diamond_chestplate.json
@@ -54,9 +54,12 @@ a3de62f8fb8733dc8ced24a05962ecf70e2848c2 data/minecraft/advancements/recipes/mis
 17d79bed157b993e62e159fb14189fb0110ce9d9 data/minecraft/advancements/recipes/misc/cmp_ir_blk_to_cmp_ir.json
 ccb76f3390c36066947256a9f51a1e87dd580b78 data/minecraft/advancements/recipes/misc/cmp_ir_to_cmp_ir_blk.json
 1eef95942c437b5c46c0d4293f71bf5990e618be data/minecraft/advancements/recipes/misc/cmp_ir_to_ir_blk.json
+4fd3689bff260af929a51f9a08e5064cc5aa5d92 data/minecraft/advancements/recipes/misc/cmp_n_to.json
+4ee9ae6978325083b8ec8ed30e6419b03b1ffea6 data/minecraft/advancements/recipes/misc/cmp_n_to_cmp_n_blk.json
 2b4bfcc34e89fc885f71309fd08051f4c5202365 data/minecraft/advancements/recipes/misc/dim_blk_to_cmp_dim.json
 5df2058b4ef497fd5dc7db27a91da4a1338209c1 data/minecraft/advancements/recipes/misc/gl_blk_to_cmp_gl.json
 0b1bd9c5f2da577a49ae0b093ed1f79ed1d3fa5d data/minecraft/advancements/recipes/misc/ir_blk_to_cmp_ir.json
+213a4ec7757059260ebb2ef499393bf8594deaea data/minecraft/advancements/recipes/misc/to_cmp_n.json
 dcb33943b24c15fcf167eba40969a9480143a7b0 data/minecraft/recipes/cmp_dim_blk_to_cmp_dim.json
 22be5715b397c8095ce895b2113a78dcfbb99a7b data/minecraft/recipes/cmp_dim_to_cmp_dim_blk.json
 800abc286ff4b9db30f61f9ecacac919070bfa18 data/minecraft/recipes/cmp_dim_to_dim_blk.json
@@ -66,6 +69,9 @@ ab827bd47448277890802ba825d023659446286c data/minecraft/recipes/cmp_gl_to_gl_blk
 785efc7108b9082ea68aaebed7d3b293e6470f0c data/minecraft/recipes/cmp_ir_blk_to_cmp_ir.json
 29a734d120dc4631b0386071e61134e8791b4d10 data/minecraft/recipes/cmp_ir_to_cmp_ir_blk.json
 d2b89ca47a1155c7d6145c9d8a1f8549766302bf data/minecraft/recipes/cmp_ir_to_ir_blk.json
+833b7566d21f402b2402320517ab764117a188d7 data/minecraft/recipes/cmp_n_to.json
+634b4f68195fd9ce912b9305ef15c68b95ca78e1 data/minecraft/recipes/cmp_n_to_cmp_n_blk.json
 a6a8e309d9a79e48407d55a83bea0947e501631b data/minecraft/recipes/dim_blk_to_cmp_dim.json
 7de9f436f168589f584104de6a88058fed2bd1ec data/minecraft/recipes/gl_blk_to_cmp_gl.json
 01da0d9fe93e8321dd19b58d17a8ab90d5d90799 data/minecraft/recipes/ir_blk_to_cmp_ir.json
+ff5186dfee3fb1b84f7b2920379debe463156efb data/minecraft/recipes/to_cmp_n.json

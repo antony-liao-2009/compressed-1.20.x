@@ -1,4 +1,4 @@
-// 1.20.1	2024-05-18T16:53:02.90204	Item Models: compressed
+// 1.20.1	2024-05-20T21:24:15.487798	Item Models: compressed
 f619a785e5a1c6aa26399f501daea3c5c0818eaa assets/compressed/models/item/compressed_diamond.json
 c1c6733ea30ab55ba4bb44bbad1b4b8f7ab4633c assets/compressed/models/item/compressed_diamond_axe.json
 92bf7ad423b8f039c4ebc18f64d97abc61d89772 assets/compressed/models/item/compressed_diamond_boots.json
@@ -149,4 +149,5 @@ afbf28bc00486f4abdf6960264b3e7b18475e707 assets/compressed/models/item/compresse
 3b2a244df9dff653a2d3ee2387d8d20559618cb1 assets/compressed/models/item/compressed_iron_pickaxe.json
 ac3af59625e1cc0e4965aaa069e2ecb99640f5f3 assets/compressed/models/item/compressed_iron_shovel.json
 729d237d2ad26ae9d34643a4bc4fe9be9eb161db assets/compressed/models/item/compressed_iron_sword.json
+6900949f76da1ccdebde54926abfef1a09fa257d assets/compressed/models/item/compressed_netherite.json
 addd87718766773d3bcd4c4fde50ef4749170059 assets/compressed/models/item/soul_drinker.json

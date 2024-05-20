@@ -2,10 +2,12 @@
   "item.compressed.compressed_diamond": "压缩钻石",
   "item.compressed.compressed_iron": "压缩铁锭",
   "item.compressed.compressed_gold": "压缩金锭",
+  "item.compressed.compressed_netherite": "压缩下界合金锭",
 
   "block.compressed.compressed_diamond_block": "压缩钻石块",
   "block.compressed.compressed_iron_block": "压缩铁块",
   "block.compressed.compressed_gold_block": "压缩金块",
+  "block.compressed.compressed_netherite_block": "压缩下界合金块",
 
   "item.compressed.soul_drinker": "§d§l§k灵魂 §d§l§o吞噬者",
 

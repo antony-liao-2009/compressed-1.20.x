@@ -1,10 +1,13 @@
-// 1.20.1	2024-05-18T16:19:38.518864	Block States: compressed
+// 1.20.1	2024-05-20T21:24:15.493584	Block States: compressed
 c90b56a289493c2d15dd6c450db3128f784a10a6 assets/compressed/blockstates/compressed_diamond_block.json
 307ae40de11da7a2452c0c63f11fb000b2b2d93d assets/compressed/blockstates/compressed_gold_block.json
 1b73841eb77a094935ec0cb789c7eb9e0e82d812 assets/compressed/blockstates/compressed_iron_block.json
+82904733d3420a35aad5441a13f1ef8256863020 assets/compressed/blockstates/compressed_netherite_block.json
 4856f3453fb8dbd6c1c150cf2335b43a37765f04 assets/compressed/models/block/compressed_diamond_block.json
 1c5ba468bc82027dc8fc35ab424e2785d1b52342 assets/compressed/models/block/compressed_gold_block.json
 798cb8a75e5a7e159a1fa0173f57bc2f433934ff assets/compressed/models/block/compressed_iron_block.json
+7d4a5b7d9e751b4e7acec990d13c5c920e7067b7 assets/compressed/models/block/compressed_netherite_block.json
 0283903d7cf2e9364d708ada335fa15e052e77be assets/compressed/models/item/compressed_diamond_block.json
 668b7eb5a2d6f6d025d8a989cead95518b72c2f7 assets/compressed/models/item/compressed_gold_block.json
 6105f604da25c45939f236fa0b1b37d77e13017d assets/compressed/models/item/compressed_iron_block.json
+273edcc992a273adf14c36a3e1fa6f161accb104 assets/compressed/models/item/compressed_netherite_block.json

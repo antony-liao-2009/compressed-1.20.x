@@ -18,6 +18,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.COMPRESSED_DIAMOND_BLOCK);
         blockWithItem(ModBlocks.COMPRESSED_IRON_BLOCK);
         blockWithItem(ModBlocks.COMPRESSED_GOLD_BLOCK);
+        blockWithItem(ModBlocks.COMPRESSED_NETHERITE_BLOCK);
 
     }
 

@@ -343,5 +343,40 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
 
+
+
+
+
+        //netherite
+        /*
+        below is cmp_n_to_cmp_n_blk,
+        to_cmp_n,
+        cmp_n_to
+         */
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+                        ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
+                .pattern("HSH")
+                .pattern("SKS")
+                .pattern("HSH")
+                .define('S', ModItems.COMPRESSED_NETHERITE.get())
+                .define('H',Items.NETHER_STAR)
+                .define('K',Items.DRAGON_EGG)
+                .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
+                        has(ModItems.COMPRESSED_NETHERITE.get()))
+                .save(pWriter,"cmp_n_to_cmp_n_blk");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+                    ModItems.COMPRESSED_NETHERITE.get())
+                .requires(Blocks.NETHERITE_BLOCK,2)
+                .unlockedBy(getHasName(Blocks.NETHERITE_BLOCK),
+                        has(Blocks.NETHERITE_BLOCK))
+                .save(pWriter,"to_cmp_n");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
+                        Blocks.NETHERITE_BLOCK,2)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
+                        has(ModItems.COMPRESSED_NETHERITE.get()))
+                .save(pWriter,"cmp_n_to");
     }
 }

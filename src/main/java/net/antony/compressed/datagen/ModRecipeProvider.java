@@ -383,11 +383,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
          */
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                         ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
-                .pattern("HSH")
+                .pattern("HHH")
                 .pattern("SKS")
-                .pattern("HSH")
-                .define('S', ModItems.COMPRESSED_NETHERITE.get())
-                .define('H',Items.NETHER_STAR)
+                .pattern("HHH")
+                .define('H', ModItems.COMPRESSED_NETHERITE.get())
+                .define('S',Items.NETHER_STAR)
                 .define('K',Items.DRAGON_EGG)
                 .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
                         has(ModItems.COMPRESSED_NETHERITE.get()))
@@ -450,9 +450,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.SOUL_CATALYST.get())
+                .requires(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
+                .requires(Items.BEACON)
+                .unlockedBy(getHasName(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get()),
+                        has(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get()))
+                .save(pWriter);
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.SOUL_DRINKER.get())
-                .requires(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
+                .requires(ModItems.SOUL_CATALYST.get())
                 .requires(ModItems.COMPRESSED_NETHERITE_SWORD.get())
                 .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
                         has(ModItems.COMPRESSED_NETHERITE.get()))

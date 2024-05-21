@@ -67,6 +67,11 @@ public class ModItems {
                 }
             }));
 
+    public static final RegistryObject<Item> SOUL_CATALYST =
+            ITEMS.register("soul_catalyst",()->new Item(new Item.Properties()));
+
+
+
 
     //diamond tools
     public static final RegistryObject<Item> COMPRESSED_DIAMOND_SWORD = ITEMS.register("compressed_diamond_sword",

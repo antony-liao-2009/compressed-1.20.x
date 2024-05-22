@@ -21,10 +21,11 @@ public class ModArmorItem extends ArmorItem {
     static {
         Multimap<ArmorMaterial, MobEffectInstance> map = ArrayListMultimap.create();
         map.put(ModArmorMaterials.COMPRESSED_DIAMOND, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 10, false, false, true));
-        map.put(ModArmorMaterials.COMPRESSED_DIAMOND, new MobEffectInstance(MobEffects.NIGHT_VISION, 230, 10, false, false, true));
+        map.put(ModArmorMaterials.COMPRESSED_DIAMOND, new MobEffectInstance(MobEffects.NIGHT_VISION, 100000, 10, false, false, true));
         map.put(ModArmorMaterials.COMPRESSED_DIAMOND, new MobEffectInstance(MobEffects.WATER_BREATHING, 230, 10, false, false, true));
+        map.put(ModArmorMaterials.COMPRESSED_DIAMOND, new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 230, 0, false, false, true));
 
-        map.put(ModArmorMaterials.COMPRESSED_IRON, new MobEffectInstance(MobEffects.NIGHT_VISION, 230, 10, false, false, true));
+        map.put(ModArmorMaterials.COMPRESSED_IRON, new MobEffectInstance(MobEffects.NIGHT_VISION, 100000, 10, false, false, true));
 
         map.put(ModArmorMaterials.COMPRESSED_NETHERITE, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 10, false, false, true));
         map.put(ModArmorMaterials.COMPRESSED_NETHERITE, new MobEffectInstance(MobEffects.NIGHT_VISION, 100000, 10, false, false, true));

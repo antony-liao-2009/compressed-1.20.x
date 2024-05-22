@@ -4,13 +4,16 @@
   "item.compressed.compressed_gold": "压缩金锭",
   "item.compressed.compressed_netherite": "压缩下界合金锭",
 
+
   "block.compressed.compressed_diamond_block": "压缩钻石块",
   "block.compressed.compressed_iron_block": "压缩铁块",
   "block.compressed.compressed_gold_block": "压缩金块",
   "block.compressed.compressed_netherite_block": "压缩下界合金块",
 
+
   "item.compressed.soul_drinker": "§d§l§k灵魂 §d§l§o吞噬者",
   "item.compressed.soul_catalyst": "§4§o灵魂 §4§o催化剂",
+
 
   "item.compressed.compressed_diamond_sword": "压缩钻石剑",
   "item.compressed.compressed_diamond_pickaxe": "压缩钻石镐",
@@ -53,8 +56,13 @@
   "item.compressed.compressed_gold_leggings": "压缩金护腿",
   "item.compressed.compressed_gold_boots": "压缩金靴子",
 
+  "item.compressed.compressed_netherite_helmet": "压缩下界合金头盔",
+  "item.compressed.compressed_netherite_chestplate": "压缩下界合金胸甲",
+  "item.compressed.compressed_netherite_leggings": "压缩下界合金护腿",
+  "item.compressed.compressed_netherite_boots": "压缩下界合金靴子",
 
 
 
-  "creativetab.compressed_tab": "压缩Tab"
+
+  "creativetab.compressed_tab": "压缩工具&盔甲"
 }

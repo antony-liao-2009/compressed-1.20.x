@@ -88,6 +88,11 @@ public class ModCreativeModTabs {
                                 pOutput.accept(ModItems.COMPRESSED_NETHERITE_SHOVEL.get());
                                 pOutput.accept(ModItems.COMPRESSED_NETHERITE_HOE.get());
 
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_HELMET.get());
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_CHESTPLATE.get());
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_LEGGINGS.get());
+                                pOutput.accept(ModItems.COMPRESSED_NETHERITE_BOOTS.get());
+
                             })
                             .build());
 

@@ -7,9 +7,9 @@
     }
   },
   "pattern": [
-    "SSS",
-    "SSS",
-    "SSS"
+    " S ",
+    "S S",
+    " S "
   ],
   "result": {
     "item": "compressed:compressed_diamond"

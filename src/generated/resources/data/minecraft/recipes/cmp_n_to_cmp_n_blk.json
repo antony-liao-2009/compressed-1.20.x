@@ -4,17 +4,11 @@
   "key": {
     "H": {
       "item": "compressed:compressed_netherite"
-    },
-    "K": {
-      "item": "minecraft:dragon_egg"
-    },
-    "S": {
-      "item": "minecraft:nether_star"
     }
   },
   "pattern": [
     "HHH",
-    "SKS",
+    "HHH",
     "HHH"
   ],
   "result": {

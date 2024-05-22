@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond_block": {
+    "has_netherite_leggings": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond_block"
+              "minecraft:netherite_leggings"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:dim_blk_to_cmp_dim"
+        "recipe": "compressed:compressed_netherite_leggings"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_diamond_block",
+      "has_netherite_leggings",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:dim_blk_to_cmp_dim"
+      "compressed:compressed_netherite_leggings"
     ]
   },
   "sends_telemetry_event": false

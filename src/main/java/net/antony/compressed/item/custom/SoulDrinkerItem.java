@@ -10,7 +10,7 @@ import net.minecraft.world.item.Tier;
 
 public class SoulDrinkerItem extends SwordItem {
     public SoulDrinkerItem(Tier tier) {
-        super(tier,0,-2.4F,new Properties());
+        super(tier,-2147483647,-2.4F,new Properties());
     }
 
 
@@ -20,7 +20,7 @@ public class SoulDrinkerItem extends SwordItem {
     public boolean onLeftClickEntity(ItemStack stack, Player player, Entity entity) {
         if (entity instanceof LivingEntity){
             LivingEntity victim = (LivingEntity) entity;
-            if (victim instanceof Player){
+            if (victim instanceof Player && !victim.isDeadOrDying() && victim.getHealth()>0){
                 if(victim.isInvulnerable()){
                     victim.setHealth(0);
                 }
@@ -37,7 +37,7 @@ public class SoulDrinkerItem extends SwordItem {
                 }
                 return true;
             }
-            if(victim.isInvulnerable()){
+            if(victim.isInvulnerable() && !victim.isDeadOrDying() && victim.getHealth()>0){
                 victim.setHealth(0);
             }
             return true;

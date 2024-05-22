@@ -28,8 +28,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         //diamond
         /*
         below is cmp_dim_to_cmp_dim_blk,
-        cmp_dim_blk_to_cmp_dim,
-        dim_blk_to_cmp_dim
+        to_cmp_dim
         cmp_dim_to_dim_blk
         */
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
@@ -42,22 +41,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                         has(ModItems.COMPRESSED_DIAMOND.get()))
                 .save(pWriter,"cmp_dim_to_cmp_dim_blk");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
-                        ModItems.COMPRESSED_DIAMOND.get(),9)
-                .requires(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get()),
-                        has(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get()))
-                .save(pWriter,"cmp_dim_blk_to_cmp_dim");
-
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                         ModItems.COMPRESSED_DIAMOND.get())
-                .pattern("SSS")
-                .pattern("SSS")
-                .pattern("SSS")
+                .pattern(" S ")
+                .pattern("S S")
+                .pattern(" S ")
                 .define('S', Blocks.DIAMOND_BLOCK)
                 .unlockedBy(getHasName(Blocks.DIAMOND_BLOCK),
                         has(Blocks.DIAMOND_BLOCK))
-                .save(pWriter,"dim_blk_to_cmp_dim");
+                .save(pWriter,"to_cmp_dim");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
                         Blocks.DIAMOND_BLOCK,9)
@@ -384,11 +376,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                         ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
                 .pattern("HHH")
-                .pattern("SKS")
+                .pattern("HHH")
                 .pattern("HHH")
                 .define('H', ModItems.COMPRESSED_NETHERITE.get())
-                .define('S',Items.NETHER_STAR)
-                .define('K',Items.DRAGON_EGG)
                 .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
                         has(ModItems.COMPRESSED_NETHERITE.get()))
                 .save(pWriter,"cmp_n_to_cmp_n_blk");
@@ -448,11 +438,48 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
+        //netherite armor
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_HELMET.get())
+                .requires(Items.NETHERITE_HELMET)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_HELMET),
+                        has(Items.NETHERITE_HELMET))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_CHESTPLATE.get())
+                .requires(Items.NETHERITE_CHESTPLATE)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_CHESTPLATE),
+                        has(Items.NETHERITE_CHESTPLATE))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_LEGGINGS.get())
+                .requires(Items.NETHERITE_LEGGINGS)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_LEGGINGS),
+                        has(Items.NETHERITE_LEGGINGS))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.COMPRESSED_NETHERITE_BOOTS.get())
+                .requires(Items.NETHERITE_BOOTS)
+                .requires(ModItems.COMPRESSED_NETHERITE.get())
+                .unlockedBy(getHasName(Items.NETHERITE_BOOTS),
+                        has(Items.NETHERITE_BOOTS))
+                .save(pWriter);
+
+
+
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.SOUL_CATALYST.get())
                 .requires(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
-                .requires(Items.BEACON)
+                .requires(Items.BEACON,2)
+                .requires(Items.ZOMBIE_HEAD)
+                .requires(Items.CREEPER_HEAD)
+                .requires(Items.PIGLIN_HEAD)
+                .requires(Items.SKELETON_SKULL)
+                .requires(Items.DRAGON_HEAD,2)
                 .unlockedBy(getHasName(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get()),
                         has(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get()))
                 .save(pWriter);

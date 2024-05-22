@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_compressed_diamond_block": {
+    "has_diamond_block": {
       "conditions": {
         "items": [
           {
             "items": [
-              "compressed:compressed_diamond_block"
+              "minecraft:diamond_block"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:cmp_dim_blk_to_cmp_dim"
+        "recipe": "minecraft:to_cmp_dim"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_compressed_diamond_block",
+      "has_diamond_block",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:cmp_dim_blk_to_cmp_dim"
+      "minecraft:to_cmp_dim"
     ]
   },
   "sends_telemetry_event": false

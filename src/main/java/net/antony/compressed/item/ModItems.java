@@ -140,6 +140,7 @@ public class ModItems {
 
 
 
+
     //gold tools
     public static final RegistryObject<Item> COMPRESSED_GOLD_SWORD = ITEMS.register("compressed_gold_sword",
             ()->new SwordItem(ModToolTiers.CMP_GOLD,9,
@@ -173,6 +174,8 @@ public class ModItems {
 
 
 
+
+
     //netherite tools
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_SWORD = ITEMS.register("compressed_netherite_sword",
             ()->new SwordItem(ModToolTiers.CMP_NTHR,252,
@@ -189,6 +192,19 @@ public class ModItems {
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_HOE = ITEMS.register("compressed_netherite_hoe",
             ()->new HoeItem(ModToolTiers.CMP_NTHR,1,
                     2F,new Item.Properties()));
+
+
+    //netherite armor
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_HELMET = ITEMS.register("compressed_netherite_helmet",
+            ()->new ModArmorItem(ModArmorMaterials.COMPRESSED_NETHERITE,ArmorItem.Type.HELMET,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_CHESTPLATE = ITEMS.register("compressed_netherite_chestplate",
+            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_NETHERITE,ArmorItem.Type.CHESTPLATE,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_LEGGINGS = ITEMS.register("compressed_netherite_leggings",
+            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_NETHERITE,ArmorItem.Type.LEGGINGS,new Item.Properties()));
+    public static final RegistryObject<Item> COMPRESSED_NETHERITE_BOOTS = ITEMS.register("compressed_netherite_boots",
+            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_NETHERITE,ArmorItem.Type.BOOTS,new Item.Properties()));
+
+
 
 
     public static void register(IEventBus eventBus){

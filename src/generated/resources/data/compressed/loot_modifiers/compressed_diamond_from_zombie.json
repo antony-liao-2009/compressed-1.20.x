@@ -1,0 +1,14 @@
+{
+  "type": "compressed:add_item",
+  "conditions": [
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/zombie"
+    },
+    {
+      "chance": 2.0E-4,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "compressed:compressed_diamond"
+}

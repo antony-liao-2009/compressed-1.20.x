@@ -34,7 +34,7 @@ public class ModToolTiers {
             List.of());
 
     public static final Tier CMP_NTHR = TierSortingRegistry.registerTier(
-            new ForgeTier(6,65535,60f,3f,40,
+            new ForgeTier(6,65535,1000f,3f,40,
                     ModTags.Blocks.NEEDS_CMP_NTHR_TOOL,()->Ingredient.of(ModItems.COMPRESSED_NETHERITE.get())),
             new ResourceLocation(Compressed.MODID,"compressed_netherite"),
             List.of(ModToolTiers.CMP_DIM),

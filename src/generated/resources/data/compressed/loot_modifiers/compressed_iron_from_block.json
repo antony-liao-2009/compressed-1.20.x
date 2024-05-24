@@ -1,0 +1,14 @@
+{
+  "type": "compressed:add_item",
+  "conditions": [
+    {
+      "block": "minecraft:iron_block",
+      "condition": "minecraft:block_state_property"
+    },
+    {
+      "chance": 0.005,
+      "condition": "minecraft:random_chance"
+    }
+  ],
+  "item": "compressed:compressed_iron"
+}

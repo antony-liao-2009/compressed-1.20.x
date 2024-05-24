@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.antony.compressed.block.ModBlocks;
 import net.antony.compressed.item.ModCreativeModTabs;
 import net.antony.compressed.item.ModItems;
+import net.antony.compressed.loot.ModLootModifiers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,6 +34,7 @@ public class Compressed
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 

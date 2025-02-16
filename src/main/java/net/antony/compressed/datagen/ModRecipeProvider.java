@@ -386,16 +386,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
                     ModItems.COMPRESSED_NETHERITE.get())
                 .requires(Blocks.NETHERITE_BLOCK,2)
+                .requires(Blocks.GOLD_BLOCK,2)
                 .unlockedBy(getHasName(Blocks.NETHERITE_BLOCK),
                         has(Blocks.NETHERITE_BLOCK))
                 .save(pWriter,"to_cmp_n");
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,
-                        Blocks.NETHERITE_BLOCK,2)
-                .requires(ModItems.COMPRESSED_NETHERITE.get())
-                .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
-                        has(ModItems.COMPRESSED_NETHERITE.get()))
-                .save(pWriter,"cmp_n_to");
 
 
 

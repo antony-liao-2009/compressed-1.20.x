@@ -1,0 +1,38 @@
+{
+  "parent": "compressed:all_cmp_netherite",
+  "criteria": {
+    "get_cata": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:soul_catalyst"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.compressed.what_is_it_used_for.desc"
+    },
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "compressed:soul_catalyst"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.compressed.what_is_it_used_for.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_cata"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

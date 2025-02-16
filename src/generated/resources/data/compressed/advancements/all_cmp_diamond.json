@@ -1,0 +1,162 @@
+{
+  "parent": "compressed:get_cmp_diamond_ta",
+  "criteria": {
+    "axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_axe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.compressed.absolutely_op.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "compressed:compressed_diamond_sword",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.compressed.absolutely_op.title"
+    }
+  },
+  "requirements": [
+    [
+      "sword"
+    ],
+    [
+      "axe"
+    ],
+    [
+      "shovel"
+    ],
+    [
+      "pickaxe"
+    ],
+    [
+      "hoe"
+    ],
+    [
+      "helmet"
+    ],
+    [
+      "chestplate"
+    ],
+    [
+      "leggings"
+    ],
+    [
+      "boots"
+    ]
+  ],
+  "rewards": {
+    "experience": 10000
+  },
+  "sends_telemetry_event": true
+}

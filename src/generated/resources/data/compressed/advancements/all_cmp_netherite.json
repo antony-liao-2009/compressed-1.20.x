@@ -1,0 +1,162 @@
+{
+  "parent": "compressed:get_cmp_netherite_ta",
+  "criteria": {
+    "axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_axe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "boots": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_boots"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "chestplate": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_chestplate"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "hoe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_hoe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "leggings": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "sword": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_sword"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.game_over.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "compressed:compressed_netherite_sword",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.game_over.title"
+    }
+  },
+  "requirements": [
+    [
+      "sword"
+    ],
+    [
+      "axe"
+    ],
+    [
+      "shovel"
+    ],
+    [
+      "pickaxe"
+    ],
+    [
+      "hoe"
+    ],
+    [
+      "helmet"
+    ],
+    [
+      "chestplate"
+    ],
+    [
+      "leggings"
+    ],
+    [
+      "boots"
+    ]
+  ],
+  "rewards": {
+    "experience": 25000
+  },
+  "sends_telemetry_event": true
+}

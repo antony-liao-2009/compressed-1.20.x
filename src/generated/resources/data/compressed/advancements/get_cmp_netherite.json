@@ -1,0 +1,41 @@
+{
+  "parent": "compressed:compressed_root_advancement",
+  "criteria": {
+    "get_cmp_netherite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.compressed.ultimate_building_blocks.desc"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "compressed:compressed_netherite"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.compressed.ultimate_building_blocks.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_cmp_netherite"
+    ]
+  ],
+  "rewards": {
+    "experience": 2000
+  },
+  "sends_telemetry_event": true
+}

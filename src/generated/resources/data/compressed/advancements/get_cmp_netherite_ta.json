@@ -1,0 +1,47 @@
+{
+  "parent": "compressed:get_cmp_netherite",
+  "criteria": {
+    "get_cmp_netherite_ta": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_netherite_sword",
+              "compressed:compressed_netherite_axe",
+              "compressed:compressed_netherite_boots",
+              "compressed:compressed_netherite_shovel",
+              "compressed:compressed_netherite_hoe",
+              "compressed:compressed_netherite_helmet",
+              "compressed:compressed_netherite_pickaxe",
+              "compressed:compressed_netherite_chestplate",
+              "compressed:compressed_netherite_leggings"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.compressed.demigod.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "compressed:compressed_netherite_sword",
+      "nbt": "{Damage:0}"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.compressed.demigod.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_cmp_netherite_ta"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

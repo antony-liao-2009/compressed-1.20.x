@@ -66,13 +66,41 @@
   "advancement.compressed.first_things_first.desc": "Obtain your first Compressed iron ingot",
 
   "advancement.compressed.compressed_diamonds.title": "Compressed Diamonds!",
-  "advancement.compressed.compressed_diamonds.desc": "Obtain your first Compressed Diamond",
+  "advancement.compressed.compressed_diamonds.desc": "Obtain your first Compressed diamond",
 
   "advancement.compressed.ultimate_building_blocks.title": "Ultimate Building Blocks",
   "advancement.compressed.ultimate_building_blocks.desc": "Obtain your first Compressed netherite ingot",
 
+  "advancement.compressed.is_this_useful.title": "Is this useful?",
+  "advancement.compressed.is_this_useful.desc": "Obtain your first Compressed gold ingot",
+
+  "advancement.compressed.level1_or_100.title": "Level 1 or 100?",
+  "advancement.compressed.level1_or_100.desc": "Obtain any Compressed iron tool / armor",
+
+  "advancement.compressed.stronger_than_netherite.title": "Stronger than Netherite!",
+  "advancement.compressed.stronger_than_netherite.desc": "Obtain any Compressed diamond tool / armor",
+
+  "advancement.compressed.demigod.title": "DEMIGOD",
+  "advancement.compressed.demigod.desc": "Obtain any Compressed netherite tool / armor",
+
+  "advancement.compressed.that_is_expensive.title": "That is expensive",
+  "advancement.compressed.that_is_expensive.desc": "have entire set of compressed iron tools and armor in your inventory",
+
+  "advancement.compressed.absolutely_op.title": "Absolutely OP!",
+  "advancement.compressed.absolutely_op.desc": "have entire set of compressed diamond tools and armor in your inventory",
+
+  "advancement.game_over.title": "GAME OVER.",
+  "advancement.game_over.desc": "have entire set of compressed netherite tools and armor in your inventory",
+
+  "advancement.useless.title": "Useless!!!",
+  "advancement.useless.desc": "have entire set of compressed golden tools and armor in your inventory, why did you do this!",
 
 
+  "advancement.compressed.what_is_it_used_for.title": "What is it used for?",
+  "advancement.compressed.what_is_it_used_for.desc": "Craft a Soul Catalyst",
+
+  "advancement.compressed.invincibility.title": "Invincibility",
+  "advancement.compressed.invincibility.desc": "Craft the ultimate sword of the mod",
 
 
   "creativetab.compressed_tab": "Compressed Tab"

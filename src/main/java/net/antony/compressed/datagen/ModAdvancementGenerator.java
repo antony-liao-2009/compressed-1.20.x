@@ -29,14 +29,15 @@ public class ModAdvancementGenerator implements ForgeAdvancementProvider.Advance
                         new ResourceLocation("compressed","textures/block/compressed_diamond_block.png"),                                       // Background image (null if not used)
                         FrameType.TASK,                             // Frame type (TASK, GOAL, or CHALLENGE)
                         true,                                       // Show toast?
-                        true,                                       // Announce in chat?
+                        false,                                       // Announce in chat?
                         false                                       // Hidden?
                 )
-/*
-                .addCriterion("tick", new InventoryChangeTrigger.TriggerInstance());
-                   ????????????????????????????????????????????????????? */
+
+                .addCriterion("tick",   new ImpossibleTrigger.TriggerInstance())
 
                 // Notice we now pass the advancement ID as a string (the path part) plus the existingFileHelper.
                 .save(saver, new ResourceLocation("compressed","compressed_root_advancement"), existingFileHelper);
+
+
     }
 }

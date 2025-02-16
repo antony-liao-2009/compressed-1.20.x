@@ -24,8 +24,8 @@ public class ModAdvancementGenerator implements ForgeAdvancementProvider.Advance
         Advancement root = Advancement.Builder.advancement()
                 .display(
                         ModItems.COMPRESSED_DIAMOND.get(),                              // Icon
-                        Component.literal("Compressed"),    // Title
-                        Component.literal("Explore Compressed tools and armor!"), // Description
+                        Component.translatable("advancement.compressed.root.title"),    // Title
+                        Component.translatable("advancement.compressed.root.desc"), // Description
                         new ResourceLocation("compressed","textures/block/compressed_diamond_block.png"),                                       // Background image (null if not used)
                         FrameType.TASK,                             // Frame type (TASK, GOAL, or CHALLENGE)
                         true,                                       // Show toast?
@@ -39,5 +39,49 @@ public class ModAdvancementGenerator implements ForgeAdvancementProvider.Advance
                 .save(saver, new ResourceLocation("compressed","compressed_root_advancement"), existingFileHelper);
 
 
+        Advancement first_things_first = Advancement.Builder.advancement()
+                .parent(root)
+                .display(
+                        ModItems.COMPRESSED_IRON.get(),
+                        Component.translatable("advancement.compressed.first_things_first.title"),
+                        Component.translatable("advancement.compressed.first_things_first.desc"),
+                        null,
+                        FrameType.TASK,
+                        true,
+                        true,
+                        false
+                )
+                .addCriterion("get_cmp_iron",InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COMPRESSED_IRON.get()))
+                .save(saver, new ResourceLocation("compressed","get_cmp_iron"), existingFileHelper);
+
+        Advancement compressed_diamonds = Advancement.Builder.advancement()
+                .parent(first_things_first)
+                .display(
+                        ModItems.COMPRESSED_DIAMOND.get(),
+                        Component.translatable("advancement.compressed.compressed_diamonds.title"),
+                        Component.translatable("advancement.compressed.compressed_diamonds.desc"),
+                        null,
+                        FrameType.TASK,
+                        true,
+                        true,
+                        false
+                )
+                .addCriterion("get_cmp_diamond",InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COMPRESSED_DIAMOND.get()))
+                .save(saver, new ResourceLocation("compressed","get_cmp_diamond"), existingFileHelper);
+
+        Advancement ultimate_building_blocks = Advancement.Builder.advancement()
+                .parent(compressed_diamonds)
+                .display(
+                        ModItems.COMPRESSED_NETHERITE.get(),
+                        Component.translatable("advancement.compressed.ultimate_building_blocks.title"),
+                        Component.translatable("advancement.compressed.ultimate_building_blocks.desc"),
+                        null,
+                        FrameType.CHALLENGE,
+                        true,
+                        true,
+                        false
+                )
+                .addCriterion("get_cmp_netherite",InventoryChangeTrigger.TriggerInstance.hasItems(ModItems.COMPRESSED_NETHERITE.get()))
+                .save(saver, new ResourceLocation("compressed","get_cmp_netherite"), existingFileHelper);
     }
 }

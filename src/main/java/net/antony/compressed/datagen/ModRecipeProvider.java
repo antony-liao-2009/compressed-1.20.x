@@ -371,7 +371,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         /*
         below is cmp_n_to_cmp_n_blk,
         to_cmp_n,
-        cmp_n_to
+
          */
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                         ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())

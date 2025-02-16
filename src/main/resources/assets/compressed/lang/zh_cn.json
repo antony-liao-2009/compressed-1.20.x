@@ -62,6 +62,18 @@
   "item.compressed.compressed_netherite_boots": "压缩下界合金靴子",
 
 
+  "advancement.compressed.root.title": "压缩工具&盔甲",
+  "advancement.compressed.root.desc": "探索强大的压缩工具和盔甲!",
+
+  "advancement.compressed.first_things_first.title": "迈出第一步",
+  "advancement.compressed.first_things_first.desc": "获得一块压缩铁锭",
+
+  "advancement.compressed.compressed_diamonds.title": "压缩钻石!",
+  "advancement.compressed.compressed_diamonds.desc": "获得一颗压缩钻石",
+
+  "advancement.compressed.ultimate_building_blocks.title": "终极锻造材料",
+  "advancement.compressed.ultimate_building_blocks.desc": "获得一块昂贵的压缩下界合金锭",
+
 
 
   "creativetab.compressed_tab": "压缩工具&盔甲"

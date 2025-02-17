@@ -2,9 +2,11 @@ package net.antony.compressed;
 
 import com.mojang.logging.LogUtils;
 import net.antony.compressed.block.ModBlocks;
+import net.antony.compressed.block.entity.ModBlockEntities;
 import net.antony.compressed.item.ModCreativeModTabs;
 import net.antony.compressed.item.ModItems;
 import net.antony.compressed.loot.ModLootModifiers;
+import net.antony.compressed.menu.ModMenus;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -41,6 +43,10 @@ public class Compressed
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+
+        ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModBlockEntities.BLOCK_ENTITIES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        ModMenus.MENUS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)

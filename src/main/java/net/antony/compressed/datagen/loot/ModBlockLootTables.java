@@ -21,7 +21,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.COMPRESSED_IRON_BLOCK.get());
         this.dropSelf(ModBlocks.COMPRESSED_GOLD_BLOCK.get());
         this.dropSelf(ModBlocks.COMPRESSED_NETHERITE_BLOCK.get());
-        this.dropSelf(ModBlocks.CUSTOM_CRAFTING_TABLE.get());
 
     }
 

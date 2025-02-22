@@ -2,7 +2,6 @@ package net.antony.compressed.datagen;
 
 import net.antony.compressed.Compressed;
 import net.antony.compressed.block.ModBlocks;
-import net.antony.compressed.block.entity.ModBlockEntities;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
@@ -20,7 +19,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.COMPRESSED_IRON_BLOCK);
         blockWithItem(ModBlocks.COMPRESSED_GOLD_BLOCK);
         blockWithItem(ModBlocks.COMPRESSED_NETHERITE_BLOCK);
-        blockWithItem(ModBlocks.CUSTOM_CRAFTING_TABLE);
 
     }
 

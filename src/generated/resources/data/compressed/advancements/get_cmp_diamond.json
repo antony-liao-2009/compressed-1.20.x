@@ -1,0 +1,38 @@
+{
+  "parent": "compressed:compressed_root_advancement",
+  "criteria": {
+    "get_cmp_diamond": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "compressed:compressed_diamond"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.compressed.compressed_diamonds.desc"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "compressed:compressed_diamond"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.compressed.compressed_diamonds.title"
+    }
+  },
+  "requirements": [
+    [
+      "get_cmp_diamond"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

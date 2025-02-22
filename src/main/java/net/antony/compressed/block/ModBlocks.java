@@ -1,20 +1,13 @@
 package net.antony.compressed.block;
 
 import net.antony.compressed.Compressed;
-import net.antony.compressed.block.entity.CustomCraftingBlockEntity;
 import net.antony.compressed.item.ModItems;
-import net.antony.compressed.menu.CustomCraftingMenu;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.inventory.ContainerLevelAccess;
-import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -22,8 +15,6 @@ import net.minecraftforge.registries.RegistryObject;
 
 import java.util.function.Supplier;
 
-import static net.antony.compressed.block.entity.ModBlockEntities.BLOCK_ENTITIES;
-import static net.antony.compressed.menu.ModMenus.MENUS;
 
 public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS =
@@ -52,21 +43,7 @@ public class ModBlocks {
                     .sound(SoundType.ANCIENT_DEBRIS)));
 
 
-    public static final RegistryObject<Block> CUSTOM_CRAFTING_TABLE = BLOCKS.register("custom_crafting_table", () ->
-            new CustomCraftingTableBlock(BlockBehaviour.Properties.copy(Blocks.CRAFTING_TABLE)));
 
-    public static final RegistryObject<BlockEntityType<CustomCraftingBlockEntity>> CUSTOM_CRAFTING_BLOCK_ENTITY = BLOCK_ENTITIES.register(
-            "custom_crafting_block_entity",
-            () -> BlockEntityType.Builder.of(CustomCraftingBlockEntity::new, CUSTOM_CRAFTING_TABLE.get()).build(null)
-    );
-
-    public static final RegistryObject<MenuType<CustomCraftingMenu>> CUSTOM_CRAFTING_MENU = MENUS.register(
-            "custom_crafting_menu",
-            () -> IForgeMenuType.create((windowId, inv, data) -> {
-                BlockPos pos = data.readBlockPos();
-                return new CustomCraftingMenu(windowId, inv, ContainerLevelAccess.create(inv.player.level(), pos));
-            })
-    );
 
 
 

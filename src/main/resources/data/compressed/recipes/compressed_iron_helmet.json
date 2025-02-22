@@ -1,0 +1,15 @@
+{
+  "type": "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "minecraft:iron_helmet"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_iron_helmet"
+  }
+}

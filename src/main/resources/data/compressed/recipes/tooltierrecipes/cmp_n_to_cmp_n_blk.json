@@ -1,0 +1,37 @@
+{
+  "type":  "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_netherite_block"
+  },
+  "show_notification": true
+}

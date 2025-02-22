@@ -1,0 +1,13 @@
+{
+  "type": "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "compressed:compressed_iron_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "compressed:compressed_iron"
+  }
+}

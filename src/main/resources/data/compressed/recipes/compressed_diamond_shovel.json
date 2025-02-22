@@ -1,0 +1,15 @@
+{
+  "type": "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "minecraft:diamond_shovel"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_diamond_shovel"
+  }
+}

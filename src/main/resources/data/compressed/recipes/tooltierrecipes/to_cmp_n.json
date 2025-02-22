@@ -1,0 +1,21 @@
+{
+  "type": "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:netherite_block"
+    },
+    {
+      "item": "minecraft:gold_block"
+    },
+    {
+      "item": "minecraft:gold_block"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_netherite"
+  }
+}

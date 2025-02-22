@@ -51,7 +51,7 @@ public class CompressedCraftingTableBlockEntity extends BlockEntity implements M
 
 
     private int progress = 0;
-    private int maxProgress = 20;
+    private int maxProgress = 100;
 
 
 
@@ -158,12 +158,25 @@ public class CompressedCraftingTableBlockEntity extends BlockEntity implements M
 
     private void craftItem() {
         Optional<CompressedCraftingRecipe> recipe = getCurrentRecipe();
+        if (recipe.isEmpty()) {
+            return;
+        }
+
+        CompressedCraftingRecipe craftingRecipe = recipe.get();
         ItemStack result = recipe.get().getResultItem(null);
 
-        this.itemHandler.extractItem(INPUT_SLOT_22,1,false);
+        // Extract items from the grid and update output
+        for (int i = 0; i < 9; i++) {
+            ItemStack currentSlot = itemHandler.getStackInSlot(i);
+            if (!currentSlot.isEmpty()) {
+                itemHandler.extractItem(i, 1, false); // Extract 1 item from the current slot
+            }
+        }
 
-        this.itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
-                 this.itemHandler.getStackInSlot(OUTPUT_SLOT).getCount() + result.getCount()));
+        // Insert result into the output slot
+        int currentOutputCount = itemHandler.getStackInSlot(OUTPUT_SLOT).getCount();
+        itemHandler.setStackInSlot(OUTPUT_SLOT, new ItemStack(result.getItem(),
+                currentOutputCount + result.getCount()));
     }
 
     private boolean hasRecipe() {

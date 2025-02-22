@@ -1,0 +1,15 @@
+{
+  "type": "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "compressed:soul_catalyst"
+    },
+    {
+      "item": "compressed:compressed_netherite_sword"
+    }
+  ],
+  "result": {
+    "item": "compressed:soul_drinker"
+  }
+}

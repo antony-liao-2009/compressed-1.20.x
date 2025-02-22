@@ -1,0 +1,37 @@
+{
+  "type":  "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    },
+    {
+      "item": "compressed:compressed_diamond"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_diamond_block"
+  },
+  "show_notification": true
+}

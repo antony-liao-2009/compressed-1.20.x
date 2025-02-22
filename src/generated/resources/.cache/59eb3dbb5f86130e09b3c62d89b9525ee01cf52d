@@ -1,4 +1,5 @@
-// 1.20.1	2024-05-20T21:24:15.494262	Loot Tables
+// 1.20.1	2025-02-22T15:47:55.59961	Loot Tables
+018ffdf00307e28319eb33f5f8844c110e48e532 data/compressed/loot_tables/blocks/compressed_crafting_table.json
 415abbfacb3e575f7eaec088cad52e70c50c313f data/compressed/loot_tables/blocks/compressed_diamond_block.json
 57c148876d0404a4d0cb939185c12b889bb7720d data/compressed/loot_tables/blocks/compressed_gold_block.json
 14c77d0404239ce8253a3714e7036b656afdd426 data/compressed/loot_tables/blocks/compressed_iron_block.json

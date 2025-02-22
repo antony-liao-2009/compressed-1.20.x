@@ -5,6 +5,7 @@ import net.antony.compressed.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
 
@@ -19,7 +20,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.COMPRESSED_IRON_BLOCK);
         blockWithItem(ModBlocks.COMPRESSED_GOLD_BLOCK);
         blockWithItem(ModBlocks.COMPRESSED_NETHERITE_BLOCK);
-
+        simpleBlockWithItem(ModBlocks.COMPRESSED_CRAFTING_TABLE.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/compressed_crafting_table")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "compressed:block/compressed_crafting_table"
+    }
+  }
+}

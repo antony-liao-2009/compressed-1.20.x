@@ -1,4 +1,6 @@
 {
+  "block.compressed.compressed_crafting_table": "压缩工作台",
+
   "item.compressed.compressed_diamond": "压缩钻石",
   "item.compressed.compressed_iron": "压缩铁锭",
   "item.compressed.compressed_gold": "压缩金锭",

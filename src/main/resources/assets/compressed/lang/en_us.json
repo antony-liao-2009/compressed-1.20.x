@@ -1,4 +1,6 @@
 {
+  "block.compressed.compressed_crafting_table": "Compressed Crafting Table",
+
   "item.compressed.compressed_diamond": "Compressed Diamond",
   "item.compressed.compressed_iron": "Compressed Iron",
   "item.compressed.compressed_gold": "Compressed Gold",

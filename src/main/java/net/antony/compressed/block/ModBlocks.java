@@ -2,6 +2,7 @@ package net.antony.compressed.block;
 
 import net.antony.compressed.Compressed;
 import net.antony.compressed.item.ModItems;
+import net.antony.compressed.block.CompressedCraftingTableBlock;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -42,6 +43,8 @@ public class ModBlocks {
             "compressed_netherite_block", ()-> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK)
                     .sound(SoundType.ANCIENT_DEBRIS)));
 
+    public static final RegistryObject<Block> COMPRESSED_CRAFTING_TABLE = registerBlock(
+            "compressed_crafting_table", ()-> new CompressedCraftingTableBlock(BlockBehaviour.Properties.copy(Blocks.NETHERITE_BLOCK).noOcclusion()));
 
 
 

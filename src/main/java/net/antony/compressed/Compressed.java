@@ -2,9 +2,14 @@ package net.antony.compressed;
 
 import com.mojang.logging.LogUtils;
 import net.antony.compressed.block.ModBlocks;
+import net.antony.compressed.block.entity.ModBlockEntities;
 import net.antony.compressed.item.ModCreativeModTabs;
 import net.antony.compressed.item.ModItems;
 import net.antony.compressed.loot.ModLootModifiers;
+import net.antony.compressed.recipe.ModRecipes;
+import net.antony.compressed.screen.CompressedCraftingTableScreen;
+import net.antony.compressed.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -35,6 +40,9 @@ public class Compressed
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModLootModifiers.register(modEventBus);
+        ModBlockEntities.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
+        ModRecipes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -76,7 +84,7 @@ public class Compressed
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event)
         {
-
+            MenuScreens.register(ModMenuTypes.COMPRESSED_CRAFTING_MENU.get(), CompressedCraftingTableScreen::new);
         }
     }
 }

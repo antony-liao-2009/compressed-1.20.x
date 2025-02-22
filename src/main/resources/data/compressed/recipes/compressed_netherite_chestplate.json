@@ -1,0 +1,15 @@
+{
+  "type": "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "minecraft:netherite_chestplate"
+    },
+    {
+      "item": "compressed:compressed_netherite"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_netherite_chestplate"
+  }
+}

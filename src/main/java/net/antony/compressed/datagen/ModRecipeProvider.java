@@ -23,14 +23,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
-
+        /*
 
         //diamond
-        /*
+
         below is cmp_dim_to_cmp_dim_blk,
         to_cmp_dim
         cmp_dim_to_dim_blk
-        */
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                 ModBlocks.COMPRESSED_DIAMOND_BLOCK.get())
                 .pattern("SSS")
@@ -138,12 +138,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         //iron
-        /*
+
         below is cmp_ir_to_cmp_ir_blk,
         cmp_ir_blk_to_cmp_ir,
         ir_blk_to_cmp_ir
         cmp_ir_to_ir_blk
-        */
+
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
@@ -255,12 +255,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         //gold
-        /*
+
         below is cmp_gl_to_cmp_gl_blk,
         cmp_gl_blk_to_cmp_gl,
         gl_blk_to_cmp_gl
         cmp_gl_to_gl_blk
-         */
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                         ModBlocks.COMPRESSED_GOLD_BLOCK.get())
@@ -368,11 +368,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
         //netherite
-        /*
+
         below is cmp_n_to_cmp_n_blk,
         to_cmp_n,
 
-         */
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
                         ModBlocks.COMPRESSED_NETHERITE_BLOCK.get())
                 .pattern("HHH")
@@ -486,5 +486,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.COMPRESSED_NETHERITE.get()),
                         has(ModItems.COMPRESSED_NETHERITE.get()))
                 .save(pWriter);
+        */
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC,
+                        ModBlocks.COMPRESSED_CRAFTING_TABLE.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', Items.CRAFTING_TABLE)
+                .unlockedBy(getHasName(Items.CRAFTING_TABLE),
+                        has(Items.CRAFTING_TABLE))
+                .save(pWriter,"compressed_crafting_table_reci");
     }
 }

@@ -31,15 +31,20 @@ public class CompressedCraftingRecipe implements Recipe<SimpleContainer> {
             return false;
         }
 
-        return inputItems.get(0).test(pContainer.getItem(0)) && //extremely important to match!!!
-                inputItems.get(1).test(pContainer.getItem(1)) &&
-                inputItems.get(2).test(pContainer.getItem(2)) &&
-                inputItems.get(3).test(pContainer.getItem(3)) &&
-                inputItems.get(4).test(pContainer.getItem(4)) &&
-                inputItems.get(5).test(pContainer.getItem(5)) &&
-                inputItems.get(6).test(pContainer.getItem(6)) &&
-                inputItems.get(7).test(pContainer.getItem(7)) &&
-                inputItems.get(8).test(pContainer.getItem(8));
+        int ingredientIndex = 0;
+        for (int i = 0;i<pContainer.getContainerSize();i++){
+            ItemStack slotItem = pContainer.getItem(i);
+
+            if (ingredientIndex < inputItems.size()) {
+                Ingredient ingredient = inputItems.get(ingredientIndex);
+                if (!ingredient.test(slotItem)) {
+                    return false;
+                }
+                ingredientIndex++;
+            }
+
+        }
+        return ingredientIndex == inputItems.size();
     }
 
     @Override
@@ -84,11 +89,11 @@ public class CompressedCraftingRecipe implements Recipe<SimpleContainer> {
 
         @Override
         public CompressedCraftingRecipe fromJson(ResourceLocation pRecipeId, JsonObject pSerializedRecipe) {
-            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe,"output"));
+            ItemStack output = ShapedRecipe.itemStackFromJson(GsonHelper.getAsJsonObject(pSerializedRecipe,"result"));
 
             JsonArray ingredients = GsonHelper.getAsJsonArray(pSerializedRecipe,"ingredients");
 
-            NonNullList<Ingredient> inputs = NonNullList.withSize(1,Ingredient.EMPTY);   //remember to change
+            NonNullList<Ingredient> inputs = NonNullList.withSize(ingredients.size(),Ingredient.EMPTY);   //remember to change
 
             for (int i = 0;i<inputs.size();i++){
                 inputs.set(i,Ingredient.fromJson(ingredients.get(i)));

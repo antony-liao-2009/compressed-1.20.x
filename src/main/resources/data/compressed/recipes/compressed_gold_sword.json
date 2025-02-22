@@ -1,0 +1,15 @@
+{
+  "type": "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "minecraft:golden_sword"
+    },
+    {
+      "item": "compressed:compressed_gold"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_gold_sword"
+  }
+}

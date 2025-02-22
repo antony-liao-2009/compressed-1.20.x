@@ -1,0 +1,37 @@
+{
+  "type":  "compressed:compressed_crafting",
+
+  "ingredients": [
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    },
+    {
+      "item": "compressed:compressed_iron"
+    }
+  ],
+  "result": {
+    "item": "compressed:compressed_iron_block"
+  },
+  "show_notification": true
+}

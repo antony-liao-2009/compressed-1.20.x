@@ -10,6 +10,7 @@ import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.common.data.ForgeBlockTagsProvider;
+import net.minecraftforge.fml.common.Mod;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -25,13 +26,15 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get(),
                         ModBlocks.COMPRESSED_IRON_BLOCK.get(),
                         ModBlocks.COMPRESSED_GOLD_BLOCK.get(),
-                        ModBlocks.COMPRESSED_NETHERITE_BLOCK.get());
+                        ModBlocks.COMPRESSED_NETHERITE_BLOCK.get(),
+                        ModBlocks.COMPRESSED_CRAFTING_TABLE.get());
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.COMPRESSED_DIAMOND_BLOCK.get(),
                         ModBlocks.COMPRESSED_IRON_BLOCK.get(),
                         ModBlocks.COMPRESSED_GOLD_BLOCK.get(),
-                        ModBlocks.COMPRESSED_NETHERITE_BLOCK.get());
+                        ModBlocks.COMPRESSED_NETHERITE_BLOCK.get(),
+                        ModBlocks.COMPRESSED_CRAFTING_TABLE.get());
 
 
     }

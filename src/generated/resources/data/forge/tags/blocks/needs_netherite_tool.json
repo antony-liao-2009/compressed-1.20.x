@@ -3,6 +3,7 @@
     "compressed:compressed_diamond_block",
     "compressed:compressed_iron_block",
     "compressed:compressed_gold_block",
-    "compressed:compressed_netherite_block"
+    "compressed:compressed_netherite_block",
+    "compressed:compressed_crafting_table"
   ]
 }

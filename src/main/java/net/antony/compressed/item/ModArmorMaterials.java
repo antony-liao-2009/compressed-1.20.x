@@ -17,7 +17,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
     COMPRESSED_GOLD("compressed_gold",20,new int[] {3,8,6,3},20,
     SoundEvents.ARMOR_EQUIP_GOLD, 0.3f,0f,()->Ingredient.of(ModItems.COMPRESSED_GOLD.get())),
     COMPRESSED_NETHERITE("compressed_netherite",300,new int[] {8,12,11,9},40,
-            SoundEvents.ARMOR_EQUIP_NETHERITE, 6f,0.23f,()->Ingredient.of(ModItems.COMPRESSED_NETHERITE.get()))
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 6f,0.25f,()->Ingredient.of(ModItems.COMPRESSED_NETHERITE.get()))
     ;
 
 

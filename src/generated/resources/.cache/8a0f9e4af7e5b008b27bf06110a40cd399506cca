@@ -1,3 +1,3 @@
-// 1.20.1	2024-05-20T21:24:15.494776	Tags for minecraft:block mod id compressed
-f137e258980805bd9903f07035d6a65a6a5dd9bc data/forge/tags/blocks/needs_netherite_tool.json
-f137e258980805bd9903f07035d6a65a6a5dd9bc data/minecraft/tags/blocks/mineable/pickaxe.json
+// 1.20.1	2025-02-23T13:42:22.168509	Tags for minecraft:block mod id compressed
+41241ea65fe96d3ce11a73bd0c42c20f05b506a4 data/forge/tags/blocks/needs_netherite_tool.json
+41241ea65fe96d3ce11a73bd0c42c20f05b506a4 data/minecraft/tags/blocks/mineable/pickaxe.json

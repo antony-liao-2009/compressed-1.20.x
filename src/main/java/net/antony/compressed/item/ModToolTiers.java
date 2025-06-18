@@ -13,7 +13,7 @@ import java.util.List;
 
 public class ModToolTiers {
     public static final Tier CMP_DIM = TierSortingRegistry.registerTier(
-            new ForgeTier(5,1561*9,32f,3f,30,
+            new ForgeTier(5,1561*9,60f,3f,30,
                     ModTags.Blocks.NEEDS_CMP_DIM_TOOL,()->Ingredient.of(ModItems.COMPRESSED_DIAMOND.get())),
             new ResourceLocation(Compressed.MODID,"compressed_diamond"),
             List.of(Tiers.NETHERITE),
@@ -27,7 +27,7 @@ public class ModToolTiers {
             List.of());
 
     public static final Tier CMP_GOLD = TierSortingRegistry.registerTier(
-            new ForgeTier(3,40*9,40f,1f,20,
+            new ForgeTier(3,40*9,65f,1f,20,
                     ModTags.Blocks.NEEDS_CMP_GOLD_TOOL,()->Ingredient.of(ModItems.COMPRESSED_GOLD.get())),
             new ResourceLocation(Compressed.MODID,"compressed_gold"),
             List.of(Tiers.GOLD),

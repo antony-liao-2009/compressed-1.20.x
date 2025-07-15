@@ -1,0 +1,20 @@
+{
+  "values": [
+    "compressed:compressed_diamond_helmet",
+    "compressed:compressed_diamond_chestplate",
+    "compressed:compressed_diamond_leggings",
+    "compressed:compressed_diamond_boots",
+    "compressed:compressed_iron_helmet",
+    "compressed:compressed_iron_chestplate",
+    "compressed:compressed_iron_leggings",
+    "compressed:compressed_iron_boots",
+    "compressed:compressed_gold_helmet",
+    "compressed:compressed_gold_chestplate",
+    "compressed:compressed_gold_leggings",
+    "compressed:compressed_gold_boots",
+    "compressed:compressed_netherite_helmet",
+    "compressed:compressed_netherite_chestplate",
+    "compressed:compressed_netherite_leggings",
+    "compressed:compressed_netherite_boots"
+  ]
+}

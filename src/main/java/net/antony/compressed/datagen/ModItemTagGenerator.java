@@ -21,6 +21,25 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
+        this.tag(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.COMPRESSED_DIAMOND_HELMET.get(),
+                        ModItems.COMPRESSED_DIAMOND_CHESTPLATE.get(),
+                        ModItems.COMPRESSED_DIAMOND_LEGGINGS.get(),
+                        ModItems.COMPRESSED_DIAMOND_BOOTS.get(),
 
+                        ModItems.COMPRESSED_IRON_HELMET.get(),
+                        ModItems.COMPRESSED_IRON_CHESTPLATE.get(),
+                        ModItems.COMPRESSED_IRON_LEGGINGS.get(),
+                        ModItems.COMPRESSED_IRON_BOOTS.get(),
+
+                        ModItems.COMPRESSED_GOLD_HELMET.get(),
+                        ModItems.COMPRESSED_GOLD_CHESTPLATE.get(),
+                        ModItems.COMPRESSED_GOLD_LEGGINGS.get(),
+                        ModItems.COMPRESSED_GOLD_BOOTS.get(),
+
+                        ModItems.COMPRESSED_NETHERITE_HELMET.get(),
+                        ModItems.COMPRESSED_NETHERITE_CHESTPLATE.get(),
+                        ModItems.COMPRESSED_NETHERITE_LEGGINGS.get(),
+                        ModItems.COMPRESSED_NETHERITE_BOOTS.get());
     }
 }

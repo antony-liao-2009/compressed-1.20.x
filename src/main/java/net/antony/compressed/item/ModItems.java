@@ -196,7 +196,7 @@ public class ModItems {
 
     //netherite armor
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_HELMET = ITEMS.register("compressed_netherite_helmet",
-            ()->new ArmorItem(ModArmorMaterials.COMPRESSED_NETHERITE,ArmorItem.Type.HELMET,new Item.Properties()));
+            ()->new ModArmorItem(ModArmorMaterials.COMPRESSED_NETHERITE,ArmorItem.Type.HELMET,new Item.Properties()));
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_CHESTPLATE = ITEMS.register("compressed_netherite_chestplate",
             ()->new ArmorItem(ModArmorMaterials.COMPRESSED_NETHERITE,ArmorItem.Type.CHESTPLATE,new Item.Properties()));
     public static final RegistryObject<Item> COMPRESSED_NETHERITE_LEGGINGS = ITEMS.register("compressed_netherite_leggings",

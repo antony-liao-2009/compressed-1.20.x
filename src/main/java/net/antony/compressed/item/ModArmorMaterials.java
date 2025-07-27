@@ -10,13 +10,13 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    COMPRESSED_DIAMOND("compressed_diamond",120,new int[] {6,11,7,5},30,
+    COMPRESSED_DIAMOND("compressed_diamond",300,new int[] {6,11,7,5},25,
             SoundEvents.ARMOR_EQUIP_DIAMOND, 4.5f,0.15f,()->Ingredient.of(ModItems.COMPRESSED_DIAMOND.get())),
-    COMPRESSED_IRON("compressed_iron",45,new int[] {4,8,6,4},25,
+    COMPRESSED_IRON("compressed_iron",45,new int[] {4,8,6,4},15,
             SoundEvents.ARMOR_EQUIP_IRON, 2f,0.08f,()->Ingredient.of(ModItems.COMPRESSED_IRON.get())),
-    COMPRESSED_GOLD("compressed_gold",20,new int[] {3,8,6,3},20,
+    COMPRESSED_GOLD("compressed_gold",20,new int[] {3,8,6,3},25,
     SoundEvents.ARMOR_EQUIP_GOLD, 0.3f,0f,()->Ingredient.of(ModItems.COMPRESSED_GOLD.get())),
-    COMPRESSED_NETHERITE("compressed_netherite",300,new int[] {8,12,11,9},40,
+    COMPRESSED_NETHERITE("compressed_netherite",100000000,new int[] {8,12,11,9},30,
             SoundEvents.ARMOR_EQUIP_NETHERITE, 6f,0.25f,()->Ingredient.of(ModItems.COMPRESSED_NETHERITE.get()))
     ;
 

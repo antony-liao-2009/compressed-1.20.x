@@ -117,49 +117,50 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     //holy shit stuff, new armor trimming in 1.20
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
-        final String MOD_ID = Compressed.MODID; // Change this to your mod id
+        // ①  create the BASE (non‑trim) icon once — this stops hot‑bar jitter
+        ItemModelBuilder baseModel = withExistingParent(
+                itemRegistryObject.getId().getPath(),          // e.g. compressed_diamond_helmet
+                mcLoc("item/generated"))
+                .texture("layer0",
+                        modLoc("item/" + itemRegistryObject.getId().getPath()));
 
-        if(itemRegistryObject.get() instanceof ArmorItem armorItem) {
-            trimMaterials.entrySet().forEach(entry -> {
-
-                ResourceKey<TrimMaterial> trimMaterial = entry.getKey();
-                float trimValue = entry.getValue();
+        // ②  keep your existing per‑trim loop
+        if (itemRegistryObject.get() instanceof ArmorItem armorItem) {
+            trimMaterials.forEach((trimMaterial, trimValue) -> {
 
                 String armorType = switch (armorItem.getEquipmentSlot()) {
                     case HEAD -> "helmet";
                     case CHEST -> "chestplate";
-                    case LEGS -> "leggings";
-                    case FEET -> "boots";
+                    case LEGS  -> "leggings";
+                    case FEET  -> "boots";
                     default -> "";
                 };
 
-                String armorItemPath = "item/" + armorItem;
-                String trimPath = "trims/items/" + armorType + "_trim_" + trimMaterial.location().getPath();
-                String currentTrimName = armorItemPath + "_" + trimMaterial.location().getPath() + "_trim";
-                ResourceLocation armorItemResLoc = new ResourceLocation(MOD_ID, armorItemPath);
-                ResourceLocation trimResLoc = new ResourceLocation(trimPath); // minecraft namespace
-                ResourceLocation trimNameResLoc = new ResourceLocation(MOD_ID, currentTrimName);
+                String trimTexPath = "trims/items/" + armorType + "_trim_"
+                        + trimMaterial.location().getPath();
+                String trimModelId = "item/" + armorItem + "_"                 // item/compressed_diamond_helmet_diamond_trim
+                        + trimMaterial.location().getPath() + "_trim";
 
-                // This is used for making the ExistingFileHelper acknowledge that this texture exist, so this will
-                // avoid an IllegalArgumentException
-                existingFileHelper.trackGenerated(trimResLoc, PackType.CLIENT_RESOURCES, ".png", "textures");
+                ResourceLocation armorTex = modLoc("item/" + armorItem);
+                ResourceLocation trimTex  = new ResourceLocation(trimTexPath); // minecraft namespace
+                ResourceLocation trimModel= modLoc(trimModelId);
 
-                // Trimmed armorItem files
-                getBuilder(currentTrimName)
+                existingFileHelper.trackGenerated(trimTex, PackType.CLIENT_RESOURCES,
+                        ".png", "textures");
+
+                // trimmed‑variant model
+                getBuilder(trimModelId)
                         .parent(new ModelFile.UncheckedModelFile("item/generated"))
-                        .texture("layer0", armorItemResLoc)
-                        .texture("layer1", trimResLoc);
+                        .texture("layer0", armorTex)
+                        .texture("layer1", trimTex);
 
-                // Non-trimmed armorItem file (normal variant)
-                this.withExistingParent(itemRegistryObject.getId().getPath(),
-                                mcLoc("item/generated"))
-                        .override()
-                        .model(new ModelFile.UncheckedModelFile(trimNameResLoc))
-                        .predicate(mcLoc("trim_type"), trimValue).end()
-                        .texture("layer0",
-                                new ResourceLocation(MOD_ID,
-                                        "item/" + itemRegistryObject.getId().getPath()));
+                // override entry added to the BASE model we built once
+                baseModel.override()
+                        .predicate(mcLoc("trim_type"), trimValue)
+                        .model(new ModelFile.UncheckedModelFile(trimModel))
+                        .end();
             });
         }
     }
+
 }
